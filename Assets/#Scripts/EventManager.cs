@@ -11,8 +11,15 @@ public class EventManager : MonoBehaviour
     }
 
     public event Action<BuildingModel> OnStartDragging;
-    public void ShapeDragging(BuildingModel building)
+    public void StartDragging(BuildingModel building)
     {
+        Debug.LogWarning("event");
         OnStartDragging?.Invoke(building);
+    }
+    
+    public event Action OnCurrencyUpdated;
+    public void UpdateCurrency()
+    {
+        OnCurrencyUpdated?.Invoke();
     }
 }

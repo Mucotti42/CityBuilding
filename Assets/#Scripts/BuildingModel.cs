@@ -4,7 +4,7 @@
 public class BuildingModel : ScriptableObject
 {
     public string name;
-    public Sprite image;
+    public GameObject prefab;
 
     public int goldCost;
     public int gemCost;
@@ -13,5 +13,5 @@ public class BuildingModel : ScriptableObject
     public int gemGen;
     public int lifeTimeGen;
 
-    public bool[,] tilling;
+    public int tilling;
 }

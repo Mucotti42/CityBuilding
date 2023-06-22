@@ -1,3 +1,4 @@
+using System;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -22,6 +23,10 @@ public class MenuView : MonoBehaviour
     private void Awake()
     {
         if (!instance) instance = this;
+    }
+
+    private void Start()
+    {
         GetCurrencyData();
     }
 
@@ -35,10 +40,11 @@ public class MenuView : MonoBehaviour
         Vector2Int currency = Utils.instance.LoadCurrencyData();
         _gold = currency.x;
         _gem = currency.y;
+        EventManager.instance.UpdateCurrency();
     }
 
     private void GemGoldFeedBack(bool gold, int value)
     {
-        
+        EventManager.instance.UpdateCurrency();
     }
 }

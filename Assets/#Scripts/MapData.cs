@@ -3,14 +3,11 @@
 public struct MapData
 {
     public int type;
-    public int lifetimeGen;
-    public Vector2Int pos;
+    public Vector2Int coord;
 
-    public MapData(int type, int lifetimeGen, Vector2Int pos)
+    public MapData(int type, Vector2Int coord)
     {
         this.type = type;
-        this.lifetimeGen = lifetimeGen;
-        this.pos = pos;
+        this.coord = coord;
     }
-    
 }
