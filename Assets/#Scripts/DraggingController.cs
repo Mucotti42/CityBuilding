@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DraggingController : MonoBehaviour
 {
     private bool isSelected = false;
     private BuildingModel selectedModel;
     private Transform draggingBuilding;
+    private Transform draggingBuildingPreview;
 
     #region Events
 
@@ -37,7 +39,11 @@ public class DraggingController : MonoBehaviour
         isSelected = true;
 
         draggingBuilding = Instantiate(selectedModel.prefab).transform;
+        draggingBuildingPreview = Instantiate(selectedModel.prefab).transform;
         draggingBuilding.parent = GameObject.Find("Canvas").transform;
+        draggingBuildingPreview.parent = GameObject.Find("Canvas").transform;
+        draggingBuildingPreview.GetChild(0).GetComponent<Image>().color =
+            new Color(0.6396768f, 1f, 0f, 0.454902f);
         StartCoroutine(IEDragging());
     }
 
@@ -45,7 +51,10 @@ public class DraggingController : MonoBehaviour
     {
         while (true)
         {
-            draggingBuilding.position = Input.GetTouch(0).position;
+            Vector3 pos = Input.GetTouch(0).position;
+            draggingBuilding.position = pos;
+            MapController.instance.Preview(pos, selectedModel.tilling,draggingBuildingPreview);
+            //draggingBuildingPreview.position = new Vector3(-1000, -1000, -1000);
             yield return null;
         }
     }
@@ -59,5 +68,6 @@ public class DraggingController : MonoBehaviour
         
         Destroy(draggingBuilding.gameObject);
         StopAllCoroutines();
+        
     }
 }

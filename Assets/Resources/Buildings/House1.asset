@@ -19,4 +19,4 @@ MonoBehaviour:
   goldGen: 3
   gemGen: 0
   lifeTimeGen: 0
-  tilling: 0
+  tilling: 1

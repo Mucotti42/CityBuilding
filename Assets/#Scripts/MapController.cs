@@ -23,6 +23,7 @@ public class MapController : MonoBehaviour
     private Field[] fields_1;
     private Field[] fields_2;
     private Field[] fields_4;
+    private Image lastField;
     private void Awake()
     {
         if (!instance) instance = this;
@@ -57,15 +58,18 @@ public class MapController : MonoBehaviour
         }
     }
     
-    public bool Preview(Vector3 pos, int type)
+    public bool Preview(Vector3 pos, int type, Transform prevObject)
     {
         Field field = FindNearestTile(pos, type);
         if (!field) return false;
         if(!CheckNeighbors(type, field))return false;
+
+        prevObject.position = field.transform.position;
+        if (lastField) lastField.enabled = false;
+        lastField = field.GetComponent<Image>();
+        //lastField.enabled = true;
         
-        
-        
-        return false;
+        return true;
     }
 
     private bool CheckNeighbors(int type, Field field)
