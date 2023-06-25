@@ -3,6 +3,8 @@
 [CreateAssetMenu(fileName = "Building", menuName = "GAD2005/Building", order = 1)]
 public class BuildingModel : ScriptableObject
 {
+    public BuildingType type;
+    
     public string name;
     public GameObject prefab;
 

@@ -1,29 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public struct TileActiveness
+public struct TileTransforms
 {
-    public bool[] fieldsActiveness;
-}
-public struct TilePositions
-{
-    public Transform[] fieldPositions;
+    public Transform[] fieldTransforms;
 }
 public class MapController : MonoBehaviour
 {
     public static MapController instance;
     
-    private TileActiveness[,] tileStatus = new TileActiveness[10,10];
-    private TilePositions[,] tilePositions = new TilePositions[10,10];
+    private TileTransforms[,] tileTransforms = new TileTransforms[10,10];
 
     private Transform _transform;
     
-    private Field[] fields_1;
-    private Field[] fields_2;
-    private Field[] fields_4;
-    private Image lastField;
     private void Awake()
     {
         if (!instance) instance = this;
@@ -48,27 +38,28 @@ public class MapController : MonoBehaviour
         {
             for (int j = 0; j < 10; j++)
             {
-                tilePositions[i, j].fieldPositions = new Transform[4]; 
+                tileTransforms[i, j].fieldTransforms = new Transform[4]; 
                 for (int k = 0; k < 4; k++)
                 {
-                    tilePositions[i, j].fieldPositions[k] = _transform.GetChild(index).GetChild(k).transform;
+                    tileTransforms[i, j].fieldTransforms[k] = _transform.GetChild(index).GetChild(k).transform;
                 }
                 index++;
             }
         }
     }
     
-    public bool Preview(Vector3 pos, int type, Transform prevObject)
+    public bool Preview(Vector3 pos, int type, Transform prevObject = null)
     {
+        //prevObject.position = pos;
         Field field = FindNearestTile(pos, type);
         if (!field) return false;
         if(!CheckNeighbors(type, field))return false;
 
-        prevObject.position = field.transform.position;
-        if (lastField) lastField.enabled = false;
-        lastField = field.GetComponent<Image>();
-        //lastField.enabled = true;
-        
+        if (prevObject)
+        {
+            prevObject.parent = field.transform;
+            prevObject.localPosition = Vector3.zero;
+        }
         return true;
     }
 
@@ -82,14 +73,15 @@ public class MapController : MonoBehaviour
         }
         else if (type == 2)
         {
-            neighbors.Add(tilePositions[field.coord.x,field.coord.y].fieldPositions[index+1].GetComponent<Field>());
+            neighbors.Add(tileTransforms[field.coord.x,field.coord.y].fieldTransforms[index-1].GetComponent<Field>());
+            Debug.Log("tile",tileTransforms[field.coord.x,field.coord.y].fieldTransforms[index-1].gameObject);
             
         }
         else if (type == 4)
         {
             for (int i = 0; i < 4; i++)
             {
-                neighbors.Add(tilePositions[field.coord.x,field.coord.y].fieldPositions[index+1].GetComponent<Field>());
+                neighbors.Add(tileTransforms[field.coord.x,field.coord.y].fieldTransforms[index+1].GetComponent<Field>());
             }
         }
 
@@ -100,15 +92,50 @@ public class MapController : MonoBehaviour
         }
         return true;
     }
+    private void FillNeighbors(int type, Field field)
+    {
+        List<Field> neighbors = new List<Field>();
+        int index = field.index;
+        neighbors.Add(field);
+        if (type == 1)
+        {
+        }
+        else if (type == 2)
+        {
+            neighbors.Add(tileTransforms[field.coord.x,field.coord.y].fieldTransforms[index-1].GetComponent<Field>());
+            Debug.Log("tile",tileTransforms[field.coord.x,field.coord.y].fieldTransforms[index-1].gameObject);
+            
+        }
+        else if (type == 4)
+        {
+            for (int i = 0; i < 4; i++)
+            {
+                neighbors.Add(tileTransforms[field.coord.x,field.coord.y].fieldTransforms[index+1].GetComponent<Field>());
+            }
+        }
 
-    public void Fill(Vector2Int pos, BuildingType type)
-    {
-        
+        for (int i = 0; i < neighbors.Count; i++)
+        {
+            neighbors[i].isEmpty = false;
+        }
     }
-    
-    public void Fill(Vector2Int pos, BuildingModel building)
+
+    public GameObject Fill(Vector3 pos, BuildingModel model)
     {
+        Field field = FindNearestTile(pos, model.tilling);
         
+        var building = Instantiate(model.prefab).transform;
+        
+        building.parent = GameObject.Find("Canvas").transform.GetChild(0);
+        building.localScale = Vector3.one;
+        
+        building.parent = field.transform;
+        building.localPosition = Vector3.zero;
+        
+        building.GetComponent<BuildingMap>().Initialize(field.coord,field.index,model.type);
+
+        FillNeighbors(model.tilling, field);
+        return building.gameObject;
     }
 
     public void Remove()
@@ -130,22 +157,22 @@ public class MapController : MonoBehaviour
                 {
                     for (int k = 0; k < 4; k++)
                     {
-                        fieldTransforms.Add(tilePositions[i, j].fieldPositions[k]);
+                        fieldTransforms.Add(tileTransforms[i, j].fieldTransforms[k]);
                     }
                 }
                 
                 //2
                 else if (type == 2)
                 {
-                    for (int k = 0; k < 3; k++)
+                    for (int k = 1; k < 4; k++)
                     {
-                        fieldTransforms.Add(tilePositions[i, j].fieldPositions[k]);
+                        fieldTransforms.Add(tileTransforms[i, j].fieldTransforms[k]);
                         k++;
                     }
                 }
                 
                 //4
-                fieldTransforms.Add(tilePositions[i, j].fieldPositions[2]);
+                //fieldTransforms.Add(tileTransforms[i, j].fieldTransforms[2]);
             }
         }
 
@@ -177,7 +204,8 @@ public class MapController : MonoBehaviour
         for (int i = 0; i < buildingData.Count; i++)
         {
             var data = buildingData[i];
-            Fill(data.coord,(BuildingType)data.type);
+            //TODO EDIT
+            //Fill(data.coord,(BuildingType)data.type);
         }
     }
 }

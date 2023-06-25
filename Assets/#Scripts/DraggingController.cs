@@ -8,7 +8,6 @@ public class DraggingController : MonoBehaviour
     private bool isSelected = false;
     private BuildingModel selectedModel;
     private Transform draggingBuilding;
-    private Transform draggingBuildingPreview;
 
     #region Events
 
@@ -39,11 +38,8 @@ public class DraggingController : MonoBehaviour
         isSelected = true;
 
         draggingBuilding = Instantiate(selectedModel.prefab).transform;
-        draggingBuildingPreview = Instantiate(selectedModel.prefab).transform;
-        draggingBuilding.parent = GameObject.Find("Canvas").transform;
-        draggingBuildingPreview.parent = GameObject.Find("Canvas").transform;
-        draggingBuildingPreview.GetChild(0).GetComponent<Image>().color =
-            new Color(0.6396768f, 1f, 0f, 0.454902f);
+        draggingBuilding.parent = GameObject.Find("Canvas").transform.GetChild(0);
+        draggingBuilding.localScale = Vector3.one;
         StartCoroutine(IEDragging());
     }
 
@@ -53,8 +49,7 @@ public class DraggingController : MonoBehaviour
         {
             Vector3 pos = Input.GetTouch(0).position;
             draggingBuilding.position = pos;
-            MapController.instance.Preview(pos, selectedModel.tilling,draggingBuildingPreview);
-            //draggingBuildingPreview.position = new Vector3(-1000, -1000, -1000);
+            MapController.instance.Preview(pos, selectedModel.tilling,draggingBuilding);
             yield return null;
         }
     }
@@ -62,12 +57,16 @@ public class DraggingController : MonoBehaviour
     {
         Debug.LogWarning("DraggingS");
         if(!isSelected) return;
+
+        Destroy(draggingBuilding.gameObject);
+        StopAllCoroutines();
+
+        if (MapController.instance.Preview(Input.GetTouch(0).position, selectedModel.tilling))
+        {
+            Debug.Log("Place" , MapController.instance.Fill(Input.GetTouch(0).position,selectedModel));
+        }
         
         selectedModel = null;
         isSelected = false;
-        
-        Destroy(draggingBuilding.gameObject);
-        StopAllCoroutines();
-        
     }
 }

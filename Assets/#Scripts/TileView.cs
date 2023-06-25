@@ -13,7 +13,9 @@ public class TileView : MonoBehaviour
 
     private void CalculateCoordinates()
     {
-        
+        tileCoord = new Vector2Int(
+            transform.GetSiblingIndex() / 10,
+            transform.GetSiblingIndex() % 10);
     }
 
     public void Activeness(Sprite sprite)
