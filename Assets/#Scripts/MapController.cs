@@ -49,14 +49,14 @@ public class MapController : MonoBehaviour
     {
         //prevObject.position = pos;
         if (prevObject)
-            prevObject.parent = topLayer;
+            prevObject.SetParent(topLayer);
         Field field = FindNearestTile(pos, type);
         if (!field) return false;
         if(!CheckNeighbors(type, field))return false;
 
         if (prevObject)
         {
-            prevObject.parent = field.transform;
+            prevObject.SetParent(field.transform);
             prevObject.localPosition = Vector3.zero;
         }
         return true;
@@ -73,7 +73,6 @@ public class MapController : MonoBehaviour
         else if (type == 2)
         {
             neighbors.Add(tileTransforms[field.coord.x,field.coord.y].fieldTransforms[index-1].GetComponent<Field>());
-            Debug.Log("tile",tileTransforms[field.coord.x,field.coord.y].fieldTransforms[index-1].gameObject);
             
         }
         else if (type == 4)
@@ -91,8 +90,8 @@ public class MapController : MonoBehaviour
         }
         return true;
     }
-    
-    private void FillNeighbors(int type, Field field)
+
+    private void FillNeighbors(int type, Field field, bool isEmpty = false)
     {
         List<Field> neighbors = new List<Field>();
         int index = field.index;
@@ -116,7 +115,7 @@ public class MapController : MonoBehaviour
 
         for (int i = 0; i < neighbors.Count; i++)
         {
-            neighbors[i].isEmpty = false;
+            neighbors[i].isEmpty = isEmpty;
         }
     }
 
@@ -126,10 +125,10 @@ public class MapController : MonoBehaviour
         
         var building = Instantiate(model.prefab).transform;
         
-        building.parent = topLayer;
+        building.SetParent(topLayer);
         building.localScale = Vector3.one;
         
-        building.parent = field.transform;
+        building.SetParent(field.transform);
         building.localPosition = Vector3.zero;
         
         building.GetComponent<BuildingMap>().Initialize(field.coord,field.index,model.type);
@@ -137,9 +136,10 @@ public class MapController : MonoBehaviour
         FillNeighbors(model.tilling, field);
     }
 
-    public void Remove()
+    public void Remove(int type, Vector2Int coord, int index)
     {
-        //TODO: Button listener
+        Field field = tileTransforms[coord.x,coord.y].fieldTransforms[index].GetComponent<Field>();
+        FillNeighbors(type,field,true);
     }
 
     private Field FindNearestTile(Vector3 pos, int type)

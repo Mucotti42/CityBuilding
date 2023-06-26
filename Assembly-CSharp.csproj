@@ -76,6 +76,7 @@
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
+     <Compile Include="Assets\ProgressionBar.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
      <Compile Include="Assets\#Scripts\MenuView.cs" />
      <Compile Include="Assets\#Scripts\DraggingController.cs" />
@@ -89,7 +90,6 @@
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
-     <Compile Include="Assets\ProgressionBar.cs" />
      <Folder Include="Assets" />
      <None Include="Assets\Others\TextMesh Pro\Shaders\TMPro.cginc" />
      <Folder Include="Assets\Graphics\Sprites" />

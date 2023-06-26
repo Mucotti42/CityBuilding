@@ -97,7 +97,6 @@ public class BuildingMenu : MonoBehaviour
 
     private void OnPointerDown(BaseEventData eventData)
     {
-        Debug.LogWarning("PointerDown");
         if (canPurchase)
         {
             EventManager.instance.StartDragging(model);

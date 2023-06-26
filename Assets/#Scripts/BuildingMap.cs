@@ -8,6 +8,7 @@ public class BuildingMap : MonoBehaviour
     private int goldGen;
     private int gemGen;
     private BuildingType type;
+    private BuildingModel model;
     
     private Vector2Int coord;
     private int index;
@@ -16,7 +17,8 @@ public class BuildingMap : MonoBehaviour
     private bool frameActiveness = false;
     private Transform parent;
     
-    [SerializeField] private GameObject background, buttons, topLayer,black;
+    [SerializeField] private GameObject background, buttons;
+    private GameObject topLayer, black;
     public MapData GetSaveData()
     {
         //TODO ADD INDEX
@@ -25,6 +27,8 @@ public class BuildingMap : MonoBehaviour
     
     private void Start()
     {
+        topLayer = GameObject.Find("TopLayer");
+        black = GameObject.Find("Black").transform.GetChild(0).gameObject;
         parent = transform.parent;
         StartCoroutine(IEGeneration());
     }
@@ -34,12 +38,11 @@ public class BuildingMap : MonoBehaviour
         this.coord = pos;
         this.index = index;
         
-        var model = Resources.Load<BuildingModel>("Buildings/"+type.ToString());
+        model = Resources.Load<BuildingModel>("Buildings/"+type.ToString());
 
         goldGen = model.goldGen;
         gemGen = model.gemGen;
         
-        Debug.Log("Gen started");
         StartCoroutine(IEGeneration());
     }
 
@@ -61,7 +64,10 @@ public class BuildingMap : MonoBehaviour
 
     public void DestroyBuilding()
     {
-        
+        MapController.instance.Remove(model.tilling, coord,index);
+        ChangeFrameActiveness();
+        StopAllCoroutines();
+        Destroy(gameObject);
     }
 
     [ContextMenu("Activeness")]
@@ -70,14 +76,14 @@ public class BuildingMap : MonoBehaviour
         frameActiveness = !frameActiveness;
         if (frameActiveness)
         {
-            transform.parent = topLayer.transform;
+            transform.SetParent(topLayer.transform);
             black.SetActive(true);
             background.SetActive(true);
             buttons.SetActive(true);
         }
         else
         {
-            transform.parent = parent;
+            transform.SetParent(parent);
             black.SetActive(false);
             background.SetActive(false);
             buttons.SetActive(false);

@@ -39,7 +39,7 @@ public class DraggingController : MonoBehaviour
         isSelected = true;
 
         draggingBuilding = Instantiate(selectedModel.prefab).transform;
-        draggingBuilding.parent = topLayer;
+        draggingBuilding.SetParent(topLayer);
         draggingBuilding.localScale = Vector3.one;
         StartCoroutine(IEDragging());
     }

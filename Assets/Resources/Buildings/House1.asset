@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c030f41f66c40d185ab722c522c0fe2, type: 3}
   m_Name: House1
   m_EditorClassIdentifier: 
+  type: 0
   name: Small House
-  prefab: {fileID: 6312662019670956049, guid: 4a2dcd05983b96441ba9c65d50181049, type: 3}
+  prefab: {fileID: 8767809573216871048, guid: 1b5b5edaf81900849b946caf2c808ee5, type: 3}
   goldCost: 0
   gemCost: 2
   goldGen: 3
