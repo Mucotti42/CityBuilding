@@ -13,7 +13,6 @@ public class EventManager : MonoBehaviour
     public event Action<BuildingModel> OnStartDragging;
     public void StartDragging(BuildingModel building)
     {
-        Debug.LogWarning("event");
         OnStartDragging?.Invoke(building);
     }
     

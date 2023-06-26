@@ -9,9 +9,10 @@ public struct TileTransforms
 public class MapController : MonoBehaviour
 {
     public static MapController instance;
+
+    [SerializeField] private Transform topLayer;
     
     private TileTransforms[,] tileTransforms = new TileTransforms[10,10];
-
     private Transform _transform;
     
     private void Awake()
@@ -22,10 +23,6 @@ public class MapController : MonoBehaviour
         InitializeGrid();
     }
 
-    private void InitializeFields()
-    {
-        
-    }
     private void Start()
     {
         Load();
@@ -51,6 +48,8 @@ public class MapController : MonoBehaviour
     public bool Preview(Vector3 pos, int type, Transform prevObject = null)
     {
         //prevObject.position = pos;
+        if (prevObject)
+            prevObject.parent = topLayer;
         Field field = FindNearestTile(pos, type);
         if (!field) return false;
         if(!CheckNeighbors(type, field))return false;
@@ -92,6 +91,7 @@ public class MapController : MonoBehaviour
         }
         return true;
     }
+    
     private void FillNeighbors(int type, Field field)
     {
         List<Field> neighbors = new List<Field>();
@@ -120,13 +120,13 @@ public class MapController : MonoBehaviour
         }
     }
 
-    public GameObject Fill(Vector3 pos, BuildingModel model)
+    public void Fill(Vector3 pos, BuildingModel model)
     {
         Field field = FindNearestTile(pos, model.tilling);
         
         var building = Instantiate(model.prefab).transform;
         
-        building.parent = GameObject.Find("Canvas").transform.GetChild(0);
+        building.parent = topLayer;
         building.localScale = Vector3.one;
         
         building.parent = field.transform;
@@ -135,7 +135,6 @@ public class MapController : MonoBehaviour
         building.GetComponent<BuildingMap>().Initialize(field.coord,field.index,model.type);
 
         FillNeighbors(model.tilling, field);
-        return building.gameObject;
     }
 
     public void Remove()

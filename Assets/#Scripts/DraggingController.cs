@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class DraggingController : MonoBehaviour
 {
+    [SerializeField] private Transform topLayer;
+    
     private bool isSelected = false;
     private BuildingModel selectedModel;
     private Transform draggingBuilding;
@@ -33,12 +35,11 @@ public class DraggingController : MonoBehaviour
 
     private void StartDragging(BuildingModel building)
     {
-        Debug.LogWarning("Dragging");
         selectedModel = building;
         isSelected = true;
 
         draggingBuilding = Instantiate(selectedModel.prefab).transform;
-        draggingBuilding.parent = GameObject.Find("Canvas").transform.GetChild(0);
+        draggingBuilding.parent = topLayer;
         draggingBuilding.localScale = Vector3.one;
         StartCoroutine(IEDragging());
     }
@@ -55,7 +56,6 @@ public class DraggingController : MonoBehaviour
     }
     private void StopDragging()
     {
-        Debug.LogWarning("DraggingS");
         if(!isSelected) return;
 
         Destroy(draggingBuilding.gameObject);
@@ -63,7 +63,7 @@ public class DraggingController : MonoBehaviour
 
         if (MapController.instance.Preview(Input.GetTouch(0).position, selectedModel.tilling))
         {
-            Debug.Log("Place" , MapController.instance.Fill(Input.GetTouch(0).position,selectedModel));
+            MapController.instance.Fill(Input.GetTouch(0).position, selectedModel);
         }
         
         selectedModel = null;
