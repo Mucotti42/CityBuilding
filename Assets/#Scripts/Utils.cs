@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 public class Utils : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class Utils : MonoBehaviour
     private const string prefType     = "prefType";
     private const string prefPosX     = "prefPosX";
     private const string prefPosY     = "prefPosY";
-    private const string prefLifeTime = "prefLifeTime";
+    private const string prefindex = "prefIndex";
 
     #endregion
     
@@ -22,7 +23,13 @@ public class Utils : MonoBehaviour
     {
         if (!instance) instance = this;
     }
-    
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.F))
+            SaveData();
+    }
+
     private void SaveData()
     {
         PlayerPrefs.SetInt(prefGold,MenuView.instance.gold);
@@ -41,11 +48,12 @@ public class Utils : MonoBehaviour
         for (int i = 0; i < mapDatas.Count; i++)
         {
             var data = mapDatas[i];
-            PlayerPrefs.SetInt(i.ToString() + prefType,data.type);
+            PlayerPrefs.SetString(i.ToString() + prefType,data.type);
             PlayerPrefs.SetInt(i.ToString() + prefPosX,data.coord.x);
             PlayerPrefs.SetInt(i.ToString() + prefPosY,data.coord.y);
+            PlayerPrefs.SetInt(i.ToString() + prefindex,data.index);
         }
-
+        PlayerPrefs.Save();
         #endregion
     }
 
@@ -69,9 +77,10 @@ public class Utils : MonoBehaviour
         for (int i = 0; i < buildingCount; i++)
         {
             var data = new MapData();
-            data.type = PlayerPrefs.GetInt(i.ToString() + prefType,0);
+            data.type = PlayerPrefs.GetString(i.ToString() + prefType);
             data.coord.x = PlayerPrefs.GetInt(i.ToString() + prefPosX,0);
             data.coord.y = PlayerPrefs.GetInt(i.ToString() + prefPosY,0);
+            data.index = PlayerPrefs.GetInt(i.ToString() + prefindex,0);
             
             loadedData.Add(data);
         }
@@ -79,8 +88,9 @@ public class Utils : MonoBehaviour
         return loadedData;
     }
     
+    
 
-    private void DeleteAllData()
+    public void DeleteAllData()
     {
         PlayerPrefs.DeleteAll();
     }

@@ -7,12 +7,12 @@ using Random = UnityEngine.Random;
 public struct WaypointInfo
 {
     public List<Transform> waypoints;
-    public Vector2Int lastPositionCoord;
+    public List<Vector2Int> waypointCoords;
 
-    public WaypointInfo(List<Transform> waypoints, Vector2Int lastPositionCoord)
+    public WaypointInfo(List<Transform> waypoints, List<Vector2Int> waypointCoords)
     {
         this.waypoints = waypoints;
-        this.lastPositionCoord = lastPositionCoord;
+        this.waypointCoords = waypointCoords;
     }
 }
 public class TrafficSystem : MonoBehaviour
@@ -105,7 +105,7 @@ public class TrafficSystem : MonoBehaviour
             i++;
         }
 
-        var a =indexs[^1];
-        return new WaypointInfo(waypoints,indexs[^1]);
+        
+        return new WaypointInfo(waypoints,indexs);
     }
 }

@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c030f41f66c40d185ab722c522c0fe2, type: 3}
-  m_Name: House1
+  m_Name: Office1
   m_EditorClassIdentifier: 
-  type: 0
-  name: Family House
-  prefab: {fileID: 8767809573216871048, guid: 1b5b5edaf81900849b946caf2c808ee5, type: 3}
-  goldCost: 20
-  gemCost: 0
-  goldGen: 1
-  gemGen: 0
-  tilling: 1
+  type: 7
+  name: Skyscraper
+  prefab: {fileID: 697743383479357580, guid: f1855a9a88f7e404682b528359bf5ed1, type: 3}
+  goldCost: 0
+  gemCost: 100
+  goldGen: 0
+  gemGen: 10
+  tilling: 2

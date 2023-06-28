@@ -67,10 +67,7 @@ public class MapController : MonoBehaviour
         List<Field> neighbors = new List<Field>();
         int index = field.index;
         neighbors.Add(field);
-        if (type == 1)
-        {
-        }
-        else if (type == 2)
+        if (type == 2)
         {
             neighbors.Add(tileTransforms[field.coord.x,field.coord.y].fieldTransforms[index-1].GetComponent<Field>());
             
@@ -79,7 +76,7 @@ public class MapController : MonoBehaviour
         {
             for (int i = 0; i < 4; i++)
             {
-                neighbors.Add(tileTransforms[field.coord.x,field.coord.y].fieldTransforms[index+1].GetComponent<Field>());
+                neighbors.Add(tileTransforms[field.coord.x,field.coord.y].fieldTransforms[i].GetComponent<Field>());
             }
         }
 
@@ -122,7 +119,11 @@ public class MapController : MonoBehaviour
     public void Fill(Vector3 pos, BuildingModel model)
     {
         Field field = FindNearestTile(pos, model.tilling);
-        
+        Fill(field, model);
+    }
+
+    public void Fill(Field field, BuildingModel model)
+    {
         var building = Instantiate(model.prefab).transform;
         
         building.SetParent(topLayer);
@@ -170,8 +171,8 @@ public class MapController : MonoBehaviour
                     }
                 }
                 
-                //4
-                //fieldTransforms.Add(tileTransforms[i, j].fieldTransforms[2]);
+                else if(type == 4)
+                    fieldTransforms.Add(tileTransforms[i, j].fieldTransforms[1]);
             }
         }
 
@@ -203,8 +204,14 @@ public class MapController : MonoBehaviour
         for (int i = 0; i < buildingData.Count; i++)
         {
             var data = buildingData[i];
-            //TODO EDIT
-            //Fill(data.coord,(BuildingType)data.type);
+            var field = tileTransforms[data.coord.x, data.coord.y].fieldTransforms[data.index].GetComponent<Field>();
+            var model = Resources.Load<BuildingModel>("Buildings/"+data.type);
+            Fill(field,model);
         }
+    }
+
+    public Transform GetTile(Vector2Int coord)
+    {
+        return tileTransforms[coord.x, coord.y].fieldTransforms[0].parent;
     }
 }

@@ -13,7 +13,6 @@ public class BuildingModel : ScriptableObject
     
     public int goldGen;
     public int gemGen;
-    public int lifeTimeGen;
 
     public int tilling;
 }

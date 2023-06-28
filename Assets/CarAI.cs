@@ -7,6 +7,7 @@ using Random = UnityEngine.Random;
 public class CarAI : MonoBehaviour
 {
     private List<Transform> waypoints;
+    private List<Vector2Int> waypointCoords;
     [SerializeField] private Vector2Int startingCoord;
 
     private Transform _transform;
@@ -36,7 +37,8 @@ public class CarAI : MonoBehaviour
     {
         WaypointInfo info = TrafficSystem.instance.GetWaypoints(lastPosition);
         waypoints = info.waypoints;
-        lastPosition = info.lastPositionCoord;
+        waypointCoords = info.waypointCoords;
+        lastPosition = waypointCoords[^1];
     }
     private IEnumerator IEDrive()
     {
@@ -45,8 +47,7 @@ public class CarAI : MonoBehaviour
             GetInfo();
             for (int i = 0; i < waypoints.Count-1; i++)
             {
-                CalculateRotationAndOffset(waypoints[i].position, waypoints[i + 1].position);
-                CalculateLayer();
+                CalculateRotationOffsetLayer(waypoints[i].position, waypoints[i + 1].position, i);
                 for (int j = 0; j < 1000; j++)
                 {
                     _transform.position = Vector3.Lerp(transform.position,Vector3.Lerp(waypoints[i].position, waypoints[i + 1].position, 0.001f * j) + (Vector3)offset,lerp);
@@ -56,7 +57,7 @@ public class CarAI : MonoBehaviour
         }
     }
 
-    private void CalculateRotationAndOffset(Vector3 from, Vector3 to)
+    private void CalculateRotationOffsetLayer(Vector3 from, Vector3 to,int waypoint)
     {
         Vector3 direction = to - from;
         int index;
@@ -66,11 +67,13 @@ public class CarAI : MonoBehaviour
             {
                 index = 0;
                 offset = left;
+                CalculateLayer(waypointCoords[waypoint]);
             }
             else
             {
                 index = 1;
                 offset = up;
+                CalculateLayer(waypointCoords[waypoint+1]);
             }
         }
         else
@@ -79,19 +82,25 @@ public class CarAI : MonoBehaviour
             {
                 index = 2;
                 offset = down;
+                CalculateLayer(waypointCoords[waypoint]);
             }
             else
             {
                 index = 3;
                 offset = right;
+                CalculateLayer(waypointCoords[waypoint+1]);
             }
         }
         transform.GetChild(lastIndex).gameObject.SetActive(false);
         transform.GetChild(index).gameObject.SetActive(true);
         lastIndex = index;
     }
-    private void CalculateLayer()
+    private void CalculateLayer(Vector2Int coord)
     {
+        if(coord.x == 10 || coord.y == 10) return;
+        
+        _transform.SetParent(MapController.instance.GetTile(coord));
+        _transform.SetSiblingIndex(0);
         
     }
 }

@@ -21,8 +21,7 @@ public class BuildingMap : MonoBehaviour
     private GameObject topLayer, black;
     public MapData GetSaveData()
     {
-        //TODO ADD INDEX
-        return new MapData((int)type, coord);
+        return new MapData(type.ToString(), index, coord);
     }
     
     private void Start()

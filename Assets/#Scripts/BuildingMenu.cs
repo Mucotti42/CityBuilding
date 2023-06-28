@@ -72,8 +72,8 @@ public class BuildingMenu : MonoBehaviour
         }
         
         //Cost
-        costGold.text = "-" + model.goldCost.ToString();
-        costGem.text = "-" + model.gemCost.ToString();
+        costGold.text = model.goldCost.ToString();
+        costGem.text = model.gemCost.ToString();
         if (model.goldCost < 1 || model.gemCost < 1)
         {
             costGold.transform.parent.gameObject.SetActive(model.goldCost > 0);

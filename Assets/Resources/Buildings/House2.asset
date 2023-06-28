@@ -13,11 +13,10 @@ MonoBehaviour:
   m_Name: House2
   m_EditorClassIdentifier: 
   type: 1
-  name: House 2
-  prefab: {fileID: 883855746891648624, guid: fe6e61155391adc4286e5c31a47e60d1, type: 3}
-  goldCost: 3
-  gemCost: 3
-  goldGen: 2
-  gemGen: 2
-  lifeTimeGen: 0
+  name: Apartment
+  prefab: {fileID: 3370473817215532414, guid: fe6e61155391adc4286e5c31a47e60d1, type: 3}
+  goldCost: 80
+  gemCost: 0
+  goldGen: 5
+  gemGen: 0
   tilling: 2
