@@ -105,7 +105,7 @@ public class BuildingMenu : MonoBehaviour
 
     private void UpdateAffordability()
     {
-        canPurchase = MenuView.instance.gold > model.goldCost && MenuView.instance.gem > model.gemCost;
+        canPurchase = MenuView.instance.gold >= model.goldCost && MenuView.instance.gem >= model.gemCost;
         black.SetActive(!canPurchase);
     }
 }

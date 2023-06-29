@@ -17,14 +17,16 @@ public class MenuView : MonoBehaviour
     { 
         get => _gold; 
         set { oldGold = _gold; _gold = value;
-            GemGoldFeedBack( true,value - oldGold);} 
+            GemGoldFeedBack( true,value - oldGold);
+            Debug.Log("feedback "+ value + "  " + oldGold);
+        } 
     }
     public int gem 
     { 
         get => _gem; 
         set { 
             oldGem = _gem;  _gem = value;
-            GemGoldFeedBack( false,value - _gem);} 
+            GemGoldFeedBack( false,value - oldGem);} 
     }
 
     [SerializeField] private TextMeshProUGUI goldText;

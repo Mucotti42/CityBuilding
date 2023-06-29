@@ -143,6 +143,7 @@
      <None Include="Assets\Others\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
      <Folder Include="Assets\Graphics" />
      <Folder Include="Assets\Graphics\Sprites\UI" />
+     <Folder Include="Assets\Graphics\Sprites\Cars\Black" />
      <None Include="Assets\Others\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
      <None Include="Assets\Others\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
      <None Include="Assets\Others\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
@@ -913,6 +914,15 @@
      </Reference>
      <Reference Include="Unity.VisualScripting.State">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Recorder.Editor">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.Recorder.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Recorder">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.Recorder.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Recorder.Base">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.Recorder.Base.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>

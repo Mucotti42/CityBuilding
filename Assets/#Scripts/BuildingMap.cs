@@ -29,7 +29,6 @@ public class BuildingMap : MonoBehaviour
         topLayer = GameObject.Find("TopLayer");
         black = GameObject.Find("Black").transform.GetChild(0).gameObject;
         parent = transform.parent;
-        StartCoroutine(IEGeneration());
     }
 
     public void Initialize(Vector2Int pos, int index, BuildingType type)
@@ -51,12 +50,12 @@ public class BuildingMap : MonoBehaviour
         progress = 0;
         while (true)
         {
-            for (int i = 0; i < 10000; i++)
+            for (int i = 0; i < 1000; i++)
             {
-                progress += 0.0001f;
+                progress += 0.001f;
                 yield return null;
             }
-
+            Debug.Log("generated");
             MenuView.instance.gold += goldGen;
             MenuView.instance.gem += gemGen;
         }
