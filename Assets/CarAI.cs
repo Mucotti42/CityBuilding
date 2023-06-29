@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -15,17 +16,18 @@ public class CarAI : MonoBehaviour
     private int lastIndex = 0;
     public Vector2 offset;
 
-    public Vector2 up;
-    public Vector2 down;
-    public Vector2 right;
-    public Vector2 left;
-    [SerializeField] private float lerp = .5f;
+    private Vector2 up = new Vector2(3.56f,2);
+    private Vector2 down = new Vector2(-3.56f,-6.3f);
+    private Vector2 right = new Vector2(5.95f,-8.57f);
+    private Vector2 left = new Vector2(1.7f, -7.93f);
 
+    private Transform scaleReferance;
     private void Awake()
     {
         startingCoord = new Vector2Int(Random.Range(0, 11), Random.Range(0, 11));
         lastPosition = startingCoord;
         _transform = transform;
+        scaleReferance = GameObject.Find("Canvas").transform.GetChild(0).GetChild(0);
     }
 
     private void Start()
@@ -50,7 +52,7 @@ public class CarAI : MonoBehaviour
                 CalculateRotationOffsetLayer(waypoints[i].position, waypoints[i + 1].position, i);
                 for (int j = 0; j < 1000; j++)
                 {
-                    _transform.position = Vector3.Lerp(transform.position,Vector3.Lerp(waypoints[i].position, waypoints[i + 1].position, 0.001f * j) + (Vector3)offset,lerp);
+                    _transform.position = Vector3.Lerp(transform.position,Vector3.Lerp(waypoints[i].position, waypoints[i + 1].position, 0.001f * j) + ((Vector3)offset * Mathf.Sqrt(scaleReferance.lossyScale.x)),.5f);
                     yield return null;
                 }                
             }

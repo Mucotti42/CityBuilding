@@ -34,6 +34,7 @@ public class BuildingMap : MonoBehaviour
 
     public void Initialize(Vector2Int pos, int index, BuildingType type)
     {
+        this.type = type;
         this.coord = pos;
         this.index = index;
         

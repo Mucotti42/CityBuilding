@@ -119,6 +119,8 @@ public class MapController : MonoBehaviour
     public void Fill(Vector3 pos, BuildingModel model)
     {
         Field field = FindNearestTile(pos, model.tilling);
+        MenuView.instance.gold -= model.goldCost;
+        MenuView.instance.gem -= model.gemCost;
         Fill(field, model);
     }
 

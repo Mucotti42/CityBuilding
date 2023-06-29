@@ -5,9 +5,10 @@ using UnityEngine.UI;
 
 public class DraggingController : MonoBehaviour
 {
+    public static DraggingController instance;
     [SerializeField] private Transform topLayer;
     
-    private bool isSelected = false;
+    public bool isDragging = false;
     private BuildingModel selectedModel;
     private Transform draggingBuilding;
 
@@ -25,6 +26,11 @@ public class DraggingController : MonoBehaviour
 
     #endregion
 
+    private void Awake()
+    {
+        if (!instance) instance = this;
+    }
+
     private void Update()
     {
         if (Input.touchCount < 1) return;
@@ -36,7 +42,7 @@ public class DraggingController : MonoBehaviour
     private void StartDragging(BuildingModel building)
     {
         selectedModel = building;
-        isSelected = true;
+        isDragging = true;
 
         draggingBuilding = Instantiate(selectedModel.prefab).transform;
         draggingBuilding.SetParent(topLayer);
@@ -56,7 +62,7 @@ public class DraggingController : MonoBehaviour
     }
     private void StopDragging()
     {
-        if(!isSelected) return;
+        if(!isDragging) return;
 
         Destroy(draggingBuilding.gameObject);
         StopAllCoroutines();
@@ -67,6 +73,6 @@ public class DraggingController : MonoBehaviour
         }
         
         selectedModel = null;
-        isSelected = false;
+        isDragging = false;
     }
 }

@@ -99,7 +99,6 @@ public class TrafficSystem : MonoBehaviour
             }
 
             newPos = possibilities[Random.Range(0, possibilities.Count)];
-            Debug.Log(newPos);
             waypoints.Add(waypointGrid[newPos.x,newPos.y]);
             indexs.Add(newPos);
             i++;
