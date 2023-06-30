@@ -18,7 +18,6 @@ public class MenuView : MonoBehaviour
         get => _gold; 
         set { oldGold = _gold; _gold = value;
             GemGoldFeedBack( true,value - oldGold);
-            Debug.Log("feedback "+ value + "  " + oldGold);
         } 
     }
     public int gem 

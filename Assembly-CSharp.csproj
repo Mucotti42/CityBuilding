@@ -43,53 +43,53 @@
   <ItemGroup>
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
-     <Compile Include="Assets\#Scripts\BuildingType.cs" />
-     <Compile Include="Assets\#Scripts\Utils.cs" />
+     <Compile Include="Assets\#Scripts\Models\BuildingType.cs" />
+     <Compile Include="Assets\#Scripts\Controllers\Utils.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
-     <Compile Include="Assets\#Scripts\EditModeExecution\TilePlacer.cs" />
+     <Compile Include="Assets\#Scripts\#Editor\TilePlacer.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
-     <Compile Include="Assets\#Scripts\BuildingModel.cs" />
-     <Compile Include="Assets\BuildingEditor.cs" />
-     <Compile Include="Assets\#Scripts\BuildingMap.cs" />
+     <Compile Include="Assets\#Scripts\Models\BuildingModel.cs" />
+     <Compile Include="Assets\#Scripts\#Editor\BuildingEditor.cs" />
+     <Compile Include="Assets\#Scripts\Views\BuildingMap.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
-     <Compile Include="Assets\#Scripts\BuildingMenu.cs" />
+     <Compile Include="Assets\#Scripts\Views\BuildingMenu.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
-     <Compile Include="Assets\#Scripts\TileView.cs" />
+     <Compile Include="Assets\#Scripts\Controllers\TileView.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
-     <Compile Include="Assets\TrafficSystem.cs" />
+     <Compile Include="Assets\#Scripts\Controllers\TrafficSystem.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
-     <Compile Include="Assets\#Scripts\EditModeExecution\WaypointPlacer.cs" />
-     <Compile Include="Assets\#Scripts\MapData.cs" />
+     <Compile Include="Assets\#Scripts\#Editor\WaypointPlacer.cs" />
+     <Compile Include="Assets\#Scripts\Models\MapData.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
-     <Compile Include="Assets\#Scripts\Field.cs" />
+     <Compile Include="Assets\#Scripts\Models\Field.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
-     <Compile Include="Assets\CarAI.cs" />
+     <Compile Include="Assets\#Scripts\Controllers\CarAI.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
-     <Compile Include="Assets\ProgressionBar.cs" />
+     <Compile Include="Assets\#Scripts\Views\ProgressionBar.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
-     <Compile Include="Assets\#Scripts\MenuView.cs" />
-     <Compile Include="Assets\#Scripts\DraggingController.cs" />
+     <Compile Include="Assets\#Scripts\Views\MenuView.cs" />
+     <Compile Include="Assets\#Scripts\Controllers\DraggingController.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
-     <Compile Include="Assets\SlideAndZoom.cs" />
+     <Compile Include="Assets\#Scripts\Controllers\SlideAndZoom.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
-     <Compile Include="Assets\#Scripts\EventManager.cs" />
+     <Compile Include="Assets\#Scripts\Controllers\EventManager.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
-     <Compile Include="Assets\#Scripts\MapController.cs" />
+     <Compile Include="Assets\#Scripts\Controllers\MapController.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
@@ -102,6 +102,7 @@
      <Folder Include="Assets\Others\TextMesh Pro\Sprites" />
      <Folder Include="Assets\Others\TextMesh Pro\Resources\Sprite Assets" />
      <Folder Include="Assets\Prefabs" />
+     <Folder Include="Assets\#Scripts\Views" />
      <Folder Include="Assets\Graphics\Sprites\BuildingMap" />
      <None Include="Assets\Others\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
      <Folder Include="Assets\#Scripts" />
@@ -111,17 +112,19 @@
      <Folder Include="Assets\Scenes" />
      <None Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
      <Folder Include="Assets\Others\TextMesh Pro\Resources\Fonts &amp; Materials" />
-     <Folder Include="Assets\#Scripts\EditModeExecution" />
+     <Folder Include="Assets\#Scripts\#Editor" />
      <None Include="Assets\Others\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
      <None Include="Assets\Others\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
      <Folder Include="Assets\Graphics\Sprites\Cars\Pink" />
      <Folder Include="Assets\Others\TextMesh Pro\Resources" />
      <None Include="Assets\Others\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <Folder Include="Assets\Others\TextMesh Pro" />
+     <Folder Include="Assets\#Scripts\Controllers" />
      <Folder Include="Assets\Resources\Buildings" />
      <Folder Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Fonts" />
      <Folder Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Resources" />
      <None Include="Assets\Others\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+     <Folder Include="Assets\#Scripts\Models" />
      <None Include="Assets\Others\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
      <None Include="Assets\Others\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
      <Folder Include="Assets\Graphics\Sprites\Cars" />
@@ -798,8 +801,8 @@
      <Reference Include="Unity.2D.Tilemap.Extras">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.2D.Tilemap.Extras.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.2D.Animation.Editor">
-     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll</HintPath>
+     <Reference Include="Unity.Recorder.Editor">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.Recorder.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.InternalAPIEngineBridge.001">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll</HintPath>
@@ -809,6 +812,12 @@
      </Reference>
      <Reference Include="Unity.2D.PixelPerfect">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Recorder.Base">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.Recorder.Base.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.Animation.Editor">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Tilemap.Editor">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
@@ -915,14 +924,8 @@
      <Reference Include="Unity.VisualScripting.State">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.Recorder.Editor">
-     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.Recorder.Editor.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.Recorder">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.Recorder.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Recorder.Base">
-     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.Recorder.Base.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>

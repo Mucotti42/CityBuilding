@@ -99,7 +99,6 @@ public class MapController : MonoBehaviour
         else if (type == 2)
         {
             neighbors.Add(tileTransforms[field.coord.x,field.coord.y].fieldTransforms[index-1].GetComponent<Field>());
-            Debug.Log("tile",tileTransforms[field.coord.x,field.coord.y].fieldTransforms[index-1].gameObject);
             
         }
         else if (type == 4)

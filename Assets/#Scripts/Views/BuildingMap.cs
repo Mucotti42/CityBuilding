@@ -55,7 +55,6 @@ public class BuildingMap : MonoBehaviour
                 progress += 0.001f;
                 yield return null;
             }
-            Debug.Log("generated");
             MenuView.instance.gold += goldGen;
             MenuView.instance.gem += gemGen;
         }
