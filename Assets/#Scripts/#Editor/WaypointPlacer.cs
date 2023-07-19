@@ -40,10 +40,10 @@ public class WaypointPlacer : MonoBehaviour
             {
                 var pos = statingPos + (i * columnOffset);
                 pos += j * rowOffset;
-                GameObject point = (GameObject)PrefabUtility.InstantiatePrefab(waypoint);
-                point.name = "Waypoint " + i.ToString() + j.ToString();
-                point.transform.parent = transform;
-                point.transform.localPosition = pos;
+                //GameObject point = (GameObject)PrefabUtility.InstantiatePrefab(waypoint);
+                //point.name = "Waypoint " + i.ToString() + j.ToString();
+                //point.transform.parent = transform;
+                //point.transform.localPosition = pos;
             }
             
         }

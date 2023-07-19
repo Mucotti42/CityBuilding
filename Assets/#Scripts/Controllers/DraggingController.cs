@@ -11,6 +11,8 @@ public class DraggingController : MonoBehaviour
     public bool isDragging = false;
     private BuildingModel selectedModel;
     private Transform draggingBuilding;
+    private SpriteRenderer buildingSprite;
+    private Vector3 lastPosition;
 
     #region Events
 
@@ -33,6 +35,7 @@ public class DraggingController : MonoBehaviour
 
     private void Update()
     {
+        if(!isDragging) return;
         if (Input.touchCount < 1) return;
         if(Input.GetTouch(0).phase != TouchPhase.Ended) return;
         
@@ -45,8 +48,9 @@ public class DraggingController : MonoBehaviour
         isDragging = true;
 
         draggingBuilding = Instantiate(selectedModel.prefab).transform;
-        draggingBuilding.SetParent(topLayer);
-        draggingBuilding.localScale = Vector3.one;
+        buildingSprite = draggingBuilding.transform.GetChild(1).GetComponent<SpriteRenderer>();
+        //draggingBuilding.SetParent(topLayer);
+        //draggingBuilding.localScale = Vector3.one;
         StartCoroutine(IEDragging());
     }
 
@@ -54,22 +58,28 @@ public class DraggingController : MonoBehaviour
     {
         while (true)
         {
-            Vector3 pos = Input.GetTouch(0).position;
-            draggingBuilding.position = pos;
-            MapController.instance.Preview(pos, selectedModel.tilling,draggingBuilding);
+            // Vector3 pos = Input.GetTouch(0).position;
+            //draggingBuilding.position = pos;
+            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
+            RaycastHit2D hit = Physics2D.Raycast(mousePosition, Vector2.zero);
+
+            if (hit.collider != null)
+            {
+                lastPosition = hit.point;
+                draggingBuilding.position = lastPosition;
+                MapController.instance.Preview(lastPosition, selectedModel.tilling,draggingBuilding,buildingSprite);
+            }
             yield return null;
         }
     }
     private void StopDragging()
     {
-        if(!isDragging) return;
-
         Destroy(draggingBuilding.gameObject);
         StopAllCoroutines();
 
-        if (MapController.instance.Preview(Input.GetTouch(0).position, selectedModel.tilling))
+        if (MapController.instance.Preview(lastPosition, selectedModel.tilling))
         {
-            MapController.instance.Fill(Input.GetTouch(0).position, selectedModel);
+            MapController.instance.Fill(lastPosition, selectedModel);
         }
         
         selectedModel = null;

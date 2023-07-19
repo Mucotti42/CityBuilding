@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   name: Family House
-  prefab: {fileID: 8767809573216871048, guid: 1b5b5edaf81900849b946caf2c808ee5, type: 3}
+  prefab: {fileID: 6814108587780257229, guid: 7b97cf142785e0a4e85c91d1acdce813, type: 3}
+  consTime: 0
   goldCost: 20
   gemCost: 0
   goldGen: 1
   gemGen: 0
-  tilling: 1
+  tilling: {x: 2, y: 2}

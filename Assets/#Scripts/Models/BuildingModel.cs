@@ -7,6 +7,8 @@ public class BuildingModel : ScriptableObject
     
     public string name;
     public GameObject prefab;
+    
+    public int consTime;
 
     public int goldCost;
     public int gemCost;
@@ -14,5 +16,5 @@ public class BuildingModel : ScriptableObject
     public int goldGen;
     public int gemGen;
 
-    public int tilling;
+    public Vector2Int tilling;
 }

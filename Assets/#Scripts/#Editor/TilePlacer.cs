@@ -11,6 +11,7 @@ public class TilePlacer : MonoBehaviour
     public Vector2 columnOffset;
     public Vector2 rowOffset;
     public Vector2 statingPos;
+    public Vector2 columRowCount;
     
     public bool place, delete = false;
     
@@ -31,26 +32,28 @@ public class TilePlacer : MonoBehaviour
 
     private void Place()
     {
-        if(transform.childCount == 100)
+        if(transform.childCount == columRowCount.x*columRowCount.y)
         Delete();
-        
-        for (int i = 0; i < 10; i++)
+
+        int index = 0;
+        for (int i = 0; i < columRowCount.y; i++)
         {
-            for (int j = 0; j < 10; j++)
+            for (int j = 0; j < columRowCount.x; j++)
             {
                 var pos = statingPos + (i * columnOffset);
                 pos += j * rowOffset;
                 GameObject tile = (GameObject)PrefabUtility.InstantiatePrefab(Tile);
                 tile.transform.parent = transform;
                 tile.transform.localPosition = pos;
+                index++;
             }
-            
         }
+        Debug.LogWarning(index);
     }
 
     private void Delete()
     {
-        for (int i = 0; i < 100; i++)
+        for (int i = 0; i < columRowCount.x*columRowCount.y; i++)
         {
             DestroyImmediate(transform.GetChild(0).gameObject);
         }

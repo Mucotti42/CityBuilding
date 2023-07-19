@@ -1,0 +1,24 @@
+{
+	"AchievementIDs":[
+		{
+			"InternalID":"FirstBuilding",
+			"AppleID":"grp.millionairerich",
+			"GoogleID":"CgkIl9TUtc4bEAIQAQ"
+		}
+	],
+	"LeaderboardIDs":[
+		{
+			"InternalID":"Richness",
+			"AppleID":"grp.millionairerichness",
+			"GoogleID":"CgkIl9TUtc4bEAIQAg"
+		}
+	],
+	"CloudVariables":[],
+	"AppleSupported":true,
+	"GoogleSupported":true,
+	"GoogleAppID":"948763437591",
+	"GoogleSetupRun":true,
+	"DebugModeEnabled":false,
+	"Version":"2.7.5",
+	"SettingsLocation":"1"
+}

@@ -6,14 +6,21 @@ public struct TileTransforms
 {
     public Transform[] fieldTransforms;
 }
+
+public enum TileContent
+{
+    Empty,
+    Road,
+    Building
+}
 public class MapController : MonoBehaviour
 {
     public static MapController instance;
-
-    [SerializeField] private Transform topLayer;
     
-    private TileTransforms[,] tileTransforms = new TileTransforms[10,10];
+    private Transform[,] tileTransforms;
     private Transform _transform;
+    public TileContent[,] tileContents;
+    [SerializeField] private Vector2Int columnRown;
     
     private void Awake()
     {
@@ -30,189 +37,140 @@ public class MapController : MonoBehaviour
 
     private void InitializeGrid()
     {
+        tileContents = new TileContent[columnRown.x, columnRown.y];
+        tileTransforms = new Transform[columnRown.x, columnRown.y];
+        
         int index = 0;
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < columnRown.y; i++)
         {
-            for (int j = 0; j < 10; j++)
+            for (int j = 0; j < columnRown.x; j++)
             {
-                tileTransforms[i, j].fieldTransforms = new Transform[4]; 
-                for (int k = 0; k < 4; k++)
-                {
-                    tileTransforms[i, j].fieldTransforms[k] = _transform.GetChild(index).GetChild(k).transform;
-                }
+                tileTransforms[j, i] = _transform.GetChild(index);
                 index++;
             }
         }
     }
     
-    public bool Preview(Vector3 pos, int type, Transform prevObject = null)
+    public bool Preview(Vector3 pos, Vector2Int tilling, Transform prevObject = null, SpriteRenderer renderer = null)
     {
-        //prevObject.position = pos;
-        if (prevObject)
-            prevObject.SetParent(topLayer);
-        Field field = FindNearestTile(pos, type);
-        if (!field) return false;
-        if(!CheckNeighbors(type, field))return false;
+        if (renderer)
+            renderer.sortingOrder = 4000;
+        TileTest tile = GetClosestTile(pos);
+        if (!tile) return false;
+        if(!CheckNeighbors(tilling, tile.coord))return false;
 
         if (prevObject)
+            prevObject.position = tile.transform.position;
+
+        if (renderer)
+            renderer.sortingOrder = tile.transform.GetSiblingIndex();
+        
+        return true;
+    }
+
+    private bool CheckNeighbors(Vector2Int tilling, Vector2Int coord)
+    {
+        for (int j = 0; j < tilling.y; j++)
         {
-            prevObject.SetParent(field.transform);
-            prevObject.localPosition = Vector3.zero;
+            for (int i = 0; i < tilling.x; i++)
+            {
+                if (coord.x - i < 0 || coord.x - i > columnRown.x || coord.y + j < 0 || coord.y + j >= columnRown.y)
+                    return false;
+                if (tileContents[coord.x - i, coord.y + j] != TileContent.Empty)
+                {
+                    Debug.Log(coord + " " + tileContents[coord.x - i, coord.y + j]);
+                    return false;
+                }
+            }
         }
         return true;
     }
 
-    private bool CheckNeighbors(int type, Field field)
+    private void FillNeighbors(Vector2Int tilling, Vector2Int coord,TileContent content)
     {
-        List<Field> neighbors = new List<Field>();
-        int index = field.index;
-        neighbors.Add(field);
-        if (type == 2)
+        for (int j = 0; j < tilling.y; j++)
         {
-            neighbors.Add(tileTransforms[field.coord.x,field.coord.y].fieldTransforms[index-1].GetComponent<Field>());
-            
-        }
-        else if (type == 4)
-        {
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < tilling.x; i++)
             {
-                neighbors.Add(tileTransforms[field.coord.x,field.coord.y].fieldTransforms[i].GetComponent<Field>());
+                SetTileContent(coord.x - i, coord.y + j,content);
             }
-        }
-
-        for (int i = 0; i < neighbors.Count; i++)
-        {
-            if (!neighbors[i].isEmpty)
-                return false;
-        }
-        return true;
-    }
-
-    private void FillNeighbors(int type, Field field, bool isEmpty = false)
-    {
-        List<Field> neighbors = new List<Field>();
-        int index = field.index;
-        neighbors.Add(field);
-        if (type == 1)
-        {
-        }
-        else if (type == 2)
-        {
-            neighbors.Add(tileTransforms[field.coord.x,field.coord.y].fieldTransforms[index-1].GetComponent<Field>());
-            
-        }
-        else if (type == 4)
-        {
-            for (int i = 0; i < 4; i++)
-            {
-                neighbors.Add(tileTransforms[field.coord.x,field.coord.y].fieldTransforms[index+1].GetComponent<Field>());
-            }
-        }
-
-        for (int i = 0; i < neighbors.Count; i++)
-        {
-            neighbors[i].isEmpty = isEmpty;
         }
     }
 
     public void Fill(Vector3 pos, BuildingModel model)
     {
-        Field field = FindNearestTile(pos, model.tilling);
+        TileTest tile = GetClosestTile(pos);
         MenuView.instance.gold -= model.goldCost;
         MenuView.instance.gem -= model.gemCost;
-        Fill(field, model);
+        Fill(tile, model, model.consTime);
     }
 
-    public void Fill(Field field, BuildingModel model)
+    public void Fill(TileTest tile, BuildingModel model,int remainingConsTime)
     {
         var building = Instantiate(model.prefab).transform;
+        building.transform.position = tile.transform.position;
+        int index = GetTile(tile.coord + new Vector2Int(0,model.tilling.y)).GetSiblingIndex();
+        //building.SetParent(topLayer);
+        //building.localScale = Vector3.one;
         
-        building.SetParent(topLayer);
-        building.localScale = Vector3.one;
+        //building.SetParent(field.transform);
+        //building.localPosition = Vector3.zero;
         
-        building.SetParent(field.transform);
-        building.localPosition = Vector3.zero;
-        
-        building.GetComponent<BuildingMap>().Initialize(field.coord,field.index,model.type);
+        building.GetComponent<BuildingMap>().Initialize(tile.coord,model.type, index);
 
-        FillNeighbors(model.tilling, field);
+        FillNeighbors(model.tilling, tile.coord,TileContent.Building);
     }
 
-    public void Remove(int type, Vector2Int coord, int index)
+    public void Remove(Vector2Int tilling, Vector2Int coord)
     {
-        Field field = tileTransforms[coord.x,coord.y].fieldTransforms[index].GetComponent<Field>();
-        FillNeighbors(type,field,true);
+        //Field field = tileTransforms[coord.x,coord.y].fieldTransforms[index].GetComponent<Field>();
+        //FillNeighbors(type,field,true);
+        FillNeighbors(tilling, coord, TileContent.Empty);
     }
-
-    private Field FindNearestTile(Vector3 pos, int type)
-    {
-        Transform tMin = null;
-        float minDist = 95;
-        List<Transform> fieldTransforms = new List<Transform>();
-        for (int i = 0; i < 10; i++)
-        {
-            for (int j = 0; j < 10; j++)
-            {
-                //1
-                if (type == 1)
-                {
-                    for (int k = 0; k < 4; k++)
-                    {
-                        fieldTransforms.Add(tileTransforms[i, j].fieldTransforms[k]);
-                    }
-                }
-                
-                //2
-                else if (type == 2)
-                {
-                    for (int k = 1; k < 4; k++)
-                    {
-                        fieldTransforms.Add(tileTransforms[i, j].fieldTransforms[k]);
-                        k++;
-                    }
-                }
-                
-                else if(type == 4)
-                    fieldTransforms.Add(tileTransforms[i, j].fieldTransforms[1]);
-            }
-        }
-
-        return GetClosestTile(pos, fieldTransforms);
-    }
-    private Field GetClosestTile(Vector3 pos, List<Transform> fieldTransforms)
+    
+    private TileTest GetClosestTile(Vector3 pos)
     {
         Transform closest = null;
-        float minDist = 95;
-        foreach (Transform field in fieldTransforms)
+        float minDist = 5;
+        foreach (Transform tile in tileTransforms)
         {
-            float dist = Vector3.Distance(field.position, pos);
+            float dist = Vector3.Distance(tile.position, pos);
             if (dist < minDist)
             {
-                closest = field.transform;
+                closest = tile.transform;
                 minDist = dist;
             }
         }
 
         if (closest)
-            return closest.GetComponent<Field>();
+            return closest.GetComponent<TileTest>();
         
         return null;
     }
 
     private void Load()
     {
-        var buildingData = Utils.instance.LoadMapData();
-        for (int i = 0; i < buildingData.Count; i++)
-        {
-            var data = buildingData[i];
-            var field = tileTransforms[data.coord.x, data.coord.y].fieldTransforms[data.index].GetComponent<Field>();
-            var model = Resources.Load<BuildingModel>("Buildings/"+data.type);
-            Fill(field,model);
-        }
+        // var buildingData = Utils.instance.LoadMapData();
+        // for (int i = 0; i < buildingData.Count; i++)
+        // {
+        //     var data = buildingData[i];
+        //     var model = Resources.Load<BuildingModel>("Buildings/"+data.type);
+        //     var remainingConsTime = 0;
+        //     Fill(field,model,remainingConsTime);
+        // }
     }
 
     public Transform GetTile(Vector2Int coord)
     {
-        return tileTransforms[coord.x, coord.y].fieldTransforms[0].parent;
+        return tileTransforms[coord.x, coord.y];
+    }
+
+    public TileContent GetTileContent(int x, int y)
+    {
+        return tileContents[x, y];
+    }
+    public void SetTileContent(int x, int y, TileContent content)
+    {
+        tileContents[x, y] = content;
     }
 }
