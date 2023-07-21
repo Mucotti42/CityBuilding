@@ -20,4 +20,4 @@ MonoBehaviour:
   gemCost: 0
   goldGen: 1
   gemGen: 0
-  tilling: {x: 2, y: 2}
+  tilling: {x: 3, y: 3}
