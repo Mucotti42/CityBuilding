@@ -23,24 +23,14 @@ public class BuildingMap : MonoBehaviour
 
     private bool isActive;
     private Vector2Int tilling;
-    public MapData GetSaveData()
-    {
-        return new MapData(type.ToString(), index, coord,0);
-    }
+    // public MapData GetSaveData()
+    // {
+    //     return null; //new MapData(type.ToString(), index, coord,0);
+    // }
 
     private void Awake()
     {
         building = transform.GetChild(1).GetComponent<SpriteRenderer>();
-    }
-
-    private void Start()
-    {
-        // topLayer = GameObject.Find("TopLayer");
-        // black = GameObject.Find("Black").transform.GetChild(0).gameObject;
-        //parent = transform.parent;
-
-        
-        //constructre = transform.GetChild(2).gameObject;
     }
 
     public void Initialize(Vector2Int pos, BuildingType type, int layerIndex)
@@ -61,13 +51,16 @@ public class BuildingMap : MonoBehaviour
     [ContextMenu("CalculateRoad")]
     public bool CalculateRoad()
     {
-        var startingCoord = coord + new Vector2Int(1, -1); 
+        var startingCoord = coord + new Vector2Int(1, -1);
+        var columnRow = MapController.instance.columnRow;
         for (int i = 0; i < tilling.y +2; i++)
         {
             for (int j = 0; j < tilling.x +2; j++)
             {
                 Vector2Int currentCoord = startingCoord + new Vector2Int(-j, i);
-                if(currentCoord is {x: > 0 and < 54, y: > 0 and < 62 })
+                //if(currentCoord is {x: > 0 and < 54, y: > 0 and < 62 })
+                  if(currentCoord.x > 0 && currentCoord.x < columnRow.x &&
+                     currentCoord.y > 0 && currentCoord.y < columnRow.y )  
                     if (MapController.instance.GetTileContent(currentCoord.x, currentCoord.y) == TileContent.Road)
                     {
                         Debug.LogWarning("There is a road on frame");

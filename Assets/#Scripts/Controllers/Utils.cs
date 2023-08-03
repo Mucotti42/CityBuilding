@@ -3,6 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 public class Utils : MonoBehaviour
 {
+    public enum BuildingState
+    {
+        OnRent,
+        ReadyToCollect,
+        Contract,
+        Construction
+    }
+    public enum GeneralDatas
+    {
+        Currency,
+        Level,
+        GridLevel,
+        Friends,
+        SocialId
+    }
     #region Player Pref Keys
 
     private const string prefGold     = "prefGold";
@@ -19,9 +34,11 @@ public class Utils : MonoBehaviour
     public static Utils instance;
 
     [SerializeField] private Vector2Int startingCurrency = new Vector2Int(10,10);
+    public GameObject canvas;
     private void Awake()
     {
         if (!instance) instance = this;
+        canvas.SetActive(true);
     }
 
     private void Update()
@@ -37,11 +54,11 @@ public class Utils : MonoBehaviour
         
         #region BuildingDataSave
 
-        List<MapData> mapDatas = new List<MapData>();
+        List<BuildingData> mapDatas = new List<BuildingData>();
         var buildings = FindObjectsOfType<BuildingMap>();
         for (int i = 0; i < buildings.Length; i++)
         {
-            mapDatas.Add(buildings[i].GetSaveData());
+            //mapDatas.Add(buildings[i].GetSaveData());
         }
 
         PlayerPrefs.SetInt(prefCount,mapDatas.Count);
@@ -51,7 +68,7 @@ public class Utils : MonoBehaviour
             PlayerPrefs.SetString(i.ToString() + prefType,data.type);
             PlayerPrefs.SetInt(i.ToString() + prefPosX,data.coord.x);
             PlayerPrefs.SetInt(i.ToString() + prefPosY,data.coord.y);
-            PlayerPrefs.SetInt(i.ToString() + prefindex,data.index);
+            //PlayerPrefs.SetInt(i.ToString() + prefindex,data.index);
         }
         PlayerPrefs.Save();
         #endregion
@@ -70,17 +87,17 @@ public class Utils : MonoBehaviour
             );
     }
 
-    public List<MapData> LoadMapData()
+    public List<BuildingData> LoadMapData()
     {
         var buildingCount = PlayerPrefs.GetInt(prefCount, 0);
-        var loadedData = new List<MapData>();
+        var loadedData = new List<BuildingData>();
         for (int i = 0; i < buildingCount; i++)
         {
-            var data = new MapData();
+            var data = new BuildingData();
             data.type = PlayerPrefs.GetString(i.ToString() + prefType);
             data.coord.x = PlayerPrefs.GetInt(i.ToString() + prefPosX,0);
             data.coord.y = PlayerPrefs.GetInt(i.ToString() + prefPosY,0);
-            data.index = PlayerPrefs.GetInt(i.ToString() + prefindex,0);
+            //data.index = PlayerPrefs.GetInt(i.ToString() + prefindex,0);
             
             loadedData.Add(data);
         }

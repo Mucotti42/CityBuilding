@@ -9,10 +9,16 @@ public class TileTest : MonoBehaviour
     public Vector2Int coord;
     private RoadManager.RoadTypes type;
 
-    private void Awake()
+    private void Start()
     {
-        coord.x = transform.GetSiblingIndex() % 54;
-        coord.y = transform.GetSiblingIndex() / 54;
+        CalculateCoord();
+    }
+
+    public void CalculateCoord()
+    {
+        var row = MapController.instance.columnRow.x;
+        coord.x = transform.GetSiblingIndex() % row;
+        coord.y = transform.GetSiblingIndex() / row;
     }
 
     private void OnMouseDown()
@@ -37,5 +43,7 @@ public class TileTest : MonoBehaviour
     {
         roadTransform.parent = transform;
         roadTransform.localPosition = Vector3.zero;
+        roadTransform.localScale = Vector3.one;
+        roadTransform.GetComponentInChildren<SpriteRenderer>().sortingOrder = coord.x * coord.y + 3;
     }
 }

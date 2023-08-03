@@ -1,11 +1,4 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-
-public struct TileTransforms
-{
-    public Transform[] fieldTransforms;
-}
+﻿using UnityEngine;
 
 public enum TileContent
 {
@@ -20,33 +13,43 @@ public class MapController : MonoBehaviour
     private Transform[,] tileTransforms;
     private Transform _transform;
     public TileContent[,] tileContents;
-    [SerializeField] private Vector2Int columnRown;
-    
+    public Vector2Int columnRow;
+
     private void Awake()
     {
         if (!instance) instance = this;
         
         _transform = transform;
-        InitializeGrid();
     }
 
     private void Start()
     {
+        InitializeGrid();
         Load();
     }
 
-    private void InitializeGrid()
+    public void InitializeGrid(bool update = false)
     {
-        tileContents = new TileContent[columnRown.x, columnRown.y];
-        tileTransforms = new Transform[columnRown.x, columnRown.y];
+        TileContent[,] oldContents = tileContents;
+        
+        tileContents = new TileContent[columnRow.x, columnRow.y];
+        tileTransforms = new Transform[columnRow.x, columnRow.y];
         
         int index = 0;
-        for (int i = 0; i < columnRown.y; i++)
+        for (int i = 0; i < columnRow.y; i++)
         {
-            for (int j = 0; j < columnRown.x; j++)
+            for (int j = 0; j < columnRow.x; j++)
             {
                 tileTransforms[j, i] = _transform.GetChild(index);
                 index++;
+            }
+        }
+        if(!update) return;
+        for (int i = 0; i < oldContents.GetLength(0); i++)
+        {
+            for (int j = 0; j < oldContents.GetLength(1); j++)
+            {
+                tileContents[i + 2, j + 2] = oldContents[i, j];
             }
         }
     }
@@ -74,7 +77,7 @@ public class MapController : MonoBehaviour
         {
             for (int i = 0; i < tilling.x; i++)
             {
-                if (coord.x - i < 0 || coord.x - i > columnRown.x || coord.y + j < 0 || coord.y + j >= columnRown.y)
+                if (coord.x - i < 0 || coord.x - i > columnRow.x || coord.y + j < 0 || coord.y + j >= columnRow.y)
                     return false;
                 if (tileContents[coord.x - i, coord.y + j] != TileContent.Empty)
                 {

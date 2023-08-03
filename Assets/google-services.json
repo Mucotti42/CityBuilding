@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "948763437591",
+    "project_id": "multi-millionaire-city-6012586",
+    "storage_bucket": "multi-millionaire-city-6012586.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:948763437591:android:e87c891576760338f7ca52",
+        "android_client_info": {
+          "package_name": "com.eight.multimillionaire"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "948763437591-go9ok0a8gr1cggieaeib8j1ho8s5og7k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDK40v6BkFnuZUp6DbTQqzU6C8IfvJ3sR4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "948763437591-go9ok0a8gr1cggieaeib8j1ho8s5og7k.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "948763437591-j4gkj0c1dlakgrpjmje3bga4djoutu8l.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.eight.multimillionaire"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

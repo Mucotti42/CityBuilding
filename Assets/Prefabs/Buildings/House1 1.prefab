@@ -239,7 +239,7 @@ Transform:
   m_LocalScale: {x: 0.03591294, y: 0.03591294, z: 0.03591294}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6814108587780257228}
+  m_Father: {fileID: 4931459289540764409}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6814108586380477940
@@ -548,7 +548,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6814108586500741066}
-  m_Father: {fileID: 6814108587780257228}
+  m_Father: {fileID: 4931459289540764409}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -624,7 +624,7 @@ RectTransform:
   m_Children:
   - {fileID: 6814108587764045638}
   - {fileID: 6814108585987296575}
-  m_Father: {fileID: 6814108587780257228}
+  m_Father: {fileID: 4931459289540764409}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -984,7 +984,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6814108587780257228}
+  - component: {fileID: 4931459289540764409}
   - component: {fileID: 6814108587780257235}
   m_Layer: 5
   m_Name: House1 1
@@ -993,16 +993,16 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &6814108587780257228
-RectTransform:
+--- !u!4 &4931459289540764409
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6814108587780257229}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 20, y: 20, z: 10}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.9217601, y: -0.6714997, z: 0.15544017}
+  m_LocalScale: {x: 3.108803, y: 3.1088033, z: 1.5544016}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6814108587115268568}
@@ -1011,11 +1011,6 @@ RectTransform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.7641792, y: -8.681946}
-  m_SizeDelta: {x: 57.5, y: 66.600006}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6814108587780257235
 MonoBehaviour:
   m_ObjectHideFlags: 0

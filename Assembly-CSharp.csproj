@@ -41,269 +41,139 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\IronSource\Scripts\iOSAgent.cs" />
      <Compile Include="Assets\Extensions\CloudOnce\Data\CloudPrefs\CloudDouble.cs" />
-     <Compile Include="Assets\#Scripts\UnityAds.cs" />
      <Compile Include="Assets\IronSource\Scripts\IronSourceEvents.cs" />
      <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\Nearby\INearbyConnectionClient.cs" />
      <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Native\PInvoke\SnapshotManager.cs" />
      <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\Events\Event.cs" />
      <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\Events\IEventsClient.cs" />
-     <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
-     <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Native\PInvoke\GameServices.cs" />
      <Compile Include="Assets\Extensions\CloudOnce\Internal\UnifiedAchievement.cs" />
-     <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Internal\Data\DataManager.cs" />
-     <Compile Include="Assets\IronSource\DemoScene\IronSourceDemoScript.cs" />
      <Compile Include="Assets\IronSource\Scripts\IronSourcePlacement.cs" />
      <Compile Include="Assets\IronSource\Scripts\IronSourceConstants.cs" />
      <Compile Include="Assets\#Scripts\SoundManager.cs" />
-     <Compile Include="Assets\#Scripts\Models\BuildingType.cs" />
-     <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Native\PInvoke\AchievementManager.cs" />
      <Compile Include="Assets\Extensions\GooglePlayGames\ISocialPlatform\PlayGamesAchievement.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Providers\TestProvider\TestProviderStorageWrapper.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Internal\Interfaces\ICloudProvider.cs" />
-     <Compile Include="Assets\IronSource\Scripts\IUnityLevelPlayRewardedVideoManual.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Mediation\AdColony\Platforms\Mediation\AdColonyAppOptionsClientFactory.cs" />
      <Compile Include="Assets\IronSource\Scripts\IronSourceBannerAndroid.cs" />
      <Compile Include="Assets\Extensions\CloudOnce\Quick Start Scripts\InitializeCloudOnce.cs" />
-     <Compile Include="Assets\#Scripts\Controllers\Utils.cs" />
      <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\SignInStatus.cs" />
-     <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\Achievement.cs" />
      <Compile Include="Assets\GoogleMobileAds\Mediation\AdColony\Platforms\Android\AdColony\AdColonyAppOptionsClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Mediation\AdColony\Api\AdColony\AdColonyAppOptions.cs" />
      <Compile Include="Assets\IronSource\Scripts\IronSourceSegmentAndroid.cs" />
      <Compile Include="Assets\IronSource\Scripts\IronSourceInterstitialAndroid.cs" />
-     <Compile Include="Assets\IronSource\Scripts\IUnityRewardedVideo.cs" />
      <Compile Include="Assets\Extensions\CloudOnce\Internal\Data\CloudPrefs\SyncableItem.cs" />
-     <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Native\NativeEventClient.cs" />
-     <Compile Include="Assets\IronSource\Scripts\IronSourceBannerLevelPlayAndroid.cs" />
      <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\Video\iVideoClient.cs" />
-     <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\TokenClient.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Internal\Data\JSONObject\JSONObject.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
-     <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Native\PInvoke\RealtimeManager.cs" />
-     <Compile Include="Assets\#Scripts\#Editor\TilePlacer.cs" />
-     <Compile Include="Assets\#Scripts\IronSourceAds.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Mediation\AdColony\Api\AdColony\AdColonyMediationExtras.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Providers\DummyProvider\DummyStorageWrapper.cs" />
-     <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Android\AndroidNearbyConnectionClient.cs" />
-     <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\Nearby\NearbyConnectionConfiguration.cs" />
      <Compile Include="Assets\IronSource\Scripts\IUnityInterstitial.cs" />
-     <Compile Include="Assets\Extensions\GooglePlayGames\ISocialPlatform\PlayGamesScore.cs" />
      <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Android\AndroidSavedGameClient.cs" />
-     <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\Player.cs" />
      <Compile Include="Assets\#Scripts\AdsConfig.cs" />
-     <Compile Include="Assets\IronSource\Scripts\IronSourceRewardedVideoEvents.cs" />
-     <Compile Include="Assets\IronSource\Scripts\IUnityBanner.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
      <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Native\NativeSavedGameClient.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Internal\Interfaces\IPersistent.cs" />
      <Compile Include="Assets\Extensions\CloudOnce\Providers\DummyProvider\DummyProvider.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Mediation\AdColony\Api\MediationExtras.cs" />
-     <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
-     <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Native\PInvoke\StatsManager.cs" />
      <Compile Include="Assets\#Scripts\RoadManager.cs" />
      <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\CommonTypes.cs" />
-     <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\Nearby\ConnectionRequest.cs" />
-     <Compile Include="Assets\#Scripts\Models\BuildingModel.cs" />
      <Compile Include="Assets\Extensions\CloudOnce\Internal\Data\iCloud\iCloudListener.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Internal\Data\CloudPrefs\SyncableCurrency.cs" />
-     <Compile Include="Assets\Extensions\GooglePlayGames\OurUtils\Logger.cs" />
      <Compile Include="Assets\IronSource\Scripts\IronSourceUtils.cs" />
      <Compile Include="Assets\Extensions\CloudOnce\Internal\CloudOnceInternalEnums.cs" />
-     <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Native\PInvoke\VideoManager.cs" />
      <Compile Include="Assets\#Scripts\#Editor\BuildingEditor.cs" />
-     <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\Video\VideoCaptureState.cs" />
-     <Compile Include="Assets\IronSource\Scripts\IronSourceRewardedVideoLevelPlayManualAndroid.cs" />
      <Compile Include="Assets\#Scripts\Views\BuildingMap.cs" />
-     <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
      <Compile Include="Assets\#Scripts\Views\BuildingMenu.cs" />
-     <Compile Include="Assets\IronSource\Scripts\IronSourceSegment.cs" />
-     <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Native\PInvoke\LeaderboardManager.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
-     <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\SignInInteractivity.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Quick Start Scripts\LeaderboardsButton.cs" />
-     <Compile Include="Assets\IronSource\Scripts\IUnityLevelPlayRewardedVideo.cs" />
      <Compile Include="Assets\Extensions\GooglePlayGames\OurUtils\Misc.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Internal\Data\GameData.cs" />
      <Compile Include="Assets\#Scripts\AdmobBidding.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Internal\Data\ConflictResolver.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Quick Start Scripts\DeactivateOnCloudOnceEvent.cs" />
-     <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Android\AndroidHelperFragment.cs" />
      <Compile Include="Assets\IronSource\Scripts\IronSourceRewardedVideoLevelPlayAndroid.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Data\CloudPrefs\CloudFloat.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
      <Compile Include="Assets\Extensions\CloudOnce\Data\CloudPrefs\CloudLong.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
-     <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
      <Compile Include="Assets\IronSource\Scripts\IUnityLevelPlayBanner.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Quick Start Scripts\DeactivateOnAwakeIfNotGoogle.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Internal\Utils\GoogleAchievementUtils.cs" />
      <Compile Include="Assets\IronSource\Scripts\IronSourceImpressionData.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Internal\Utils\GoogleLeaderboardUtils.cs" />
      <Compile Include="Assets\Extensions\GooglePlayGames\GameInfo.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Internal\Utils\CloudOnceUtils.cs" />
      <Compile Include="Assets\IronSource\Scripts\IronSourceError.cs" />
-     <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\Nearby\EndpointDetails.cs" />
      <Compile Include="Assets\Extensions\CloudOnce\Internal\Utils\AppleLeaderboardUtils.cs" />
      <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Native\PInvoke\PlayerManager.cs" />
      <Compile Include="Assets\Extensions\CloudOnce\Internal\AchievementsBridge.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
-     <Compile Include="Assets\#Scripts\Controllers\TileView.cs" />
      <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Android\AndroidClient.cs" />
      <Compile Include="Assets\IronSource\Scripts\AndroidAgent.cs" />
-     <Compile Include="Assets\IronSource\Scripts\IronSourceBannerEvents.cs" />
      <Compile Include="Assets\GoogleMobileAds\Mediation\AdColony\Common\AdColony\IAdColonyAppOptionsClient.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
-     <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Internal\CloudOnceExceptions.cs" />
      <Compile Include="Assets\Extensions\CloudOnce\Internal\Interfaces\IAchievementUtils.cs" />
      <Compile Include="Assets\IronSource\Scripts\IronSourceInitilizer.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
      <Compile Include="Assets\IronSource\Scripts\IronSourceOfferwallAndroid.cs" />
-     <Compile Include="Assets\Extensions\GooglePlayGames\ISocialPlatform\PlayGamesUserProfile.cs" />
      <Compile Include="Assets\Extensions\CloudOnce\Data\CloudPrefs\CloudCurrencyInt.cs" />
      <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Native\Platforms\Android\AndroidClient.cs" />
-     <Compile Include="Assets\#Scripts\Controllers\TrafficSystem.cs" />
-     <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
-     <Compile Include="Assets\IronSource\Scripts\IronSourceInterstitialLevelPlayAndroid.cs" />
-     <Compile Include="Assets\Extensions\GooglePlayGames\ISocialPlatform\PlayGamesLeaderboard.cs" />
      <Compile Include="Assets\IronSource\Scripts\IronSourceConfig.cs" />
      <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Android\AndroidTokenClient.cs" />
-     <Compile Include="Assets\IronSource\Scripts\IronSourceMediationSettings.cs" />
-     <Compile Include="Assets\#Scripts\#Editor\WaypointPlacer.cs" />
      <Compile Include="Assets\IronSource\Scripts\IUnityLevelPlayInterstitial.cs" />
      <Compile Include="Assets\Extensions\CloudOnce\Providers\AppleGameCenter\iOSCloudSaveWrapper.cs" />
      <Compile Include="Assets\#Scripts\Models\MapData.cs" />
      <Compile Include="Assets\Extensions\GooglePlayGames\OurUtils\PlatformUtils.cs" />
-     <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
      <Compile Include="Assets\Extensions\CloudOnce\Providers\GooglePlayGames\GooglePlayGamesCloudSaveWrapper.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Internal\Utils\EditorAchievementUtils.cs" />
      <Compile Include="Assets\#Scripts\Achievement.cs" />
-     <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
-     <Compile Include="Assets\IronSource\Scripts\IUnitySegment.cs" />
      <Compile Include="Assets\Extensions\CloudOnce\Data\CloudPrefs\CloudInt.cs" />
      <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\SavedGame\ISavedGameClient.cs" />
-     <Compile Include="Assets\Extensions\GooglePlayGames\OurUtils\NearbyHelperObject.cs" />
      <Compile Include="Assets\#Scripts\Notifications.cs" />
-     <Compile Include="Assets\IronSource\Scripts\UnsupportedPlatformAgent.cs" />
      <Compile Include="Assets\GoogleMobileAds\Mediation\AdColony\Platforms\iOS\AdColony\AdColonyAppOptionsClient.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
-     <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\Video\VideoCapabilities.cs" />
      <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\DummyClient.cs" />
-     <Compile Include="Assets\Extensions\GooglePlayGames\ISocialPlatform\PlayGamesPlatform.cs" />
      <Compile Include="Assets\Extensions\CloudOnce\Providers\TestProvider\TestProvider.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Internal\UnifiedLeaderboard.cs" />
      <Compile Include="Assets\GoogleMobileAds\Mediation\AdColony\Platforms\iOS\AdColony\Externs.cs" />
-     <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\Nearby\ConnectionResponse.cs" />
-     <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\CommonStatusCodes.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Data\CloudPrefs\CloudBool.cs" />
      <Compile Include="Assets\IronSource\Scripts\IronSourceImpressionDataAndroid.cs" />
      <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Native\NativeTurnBasedMultiplayerClient.cs" />
      <Compile Include="Assets\#Scripts\GPGSManager.cs" />
-     <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\SavedGame\ISavedGameMetadata.cs" />
      <Compile Include="Assets\Extensions\CloudOnce\Internal\Interfaces\ILeaderboardUtils.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Data\CloudPrefs\CloudDateTime.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Internal\Data\CloudPrefs\SyncableItemMetaData.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Data\Achievements.cs" />
-     <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
      <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Android\AndroidJavaConverter.cs" />
      <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Android\AndroidTaskUtils.cs" />
      <Compile Include="Assets\#Scripts\Models\Field.cs" />
-     <Compile Include="Assets\IronSource\Scripts\WaterfallConfiguration.cs" />
-     <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\SavedGame\SavedGameMetadataUpdate.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
-     <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\LeaderboardScoreData.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Data\Leaderboards.cs" />
-     <Compile Include="Assets\IronSource\Scripts\IUnityOfferwall.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\SavedGame\SavedGameMetadataUpdate.cs" />
      <Compile Include="Assets\IronSource\Scripts\IronSource.cs" />
-     <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\PlayerProfile.cs" />
+     <Compile Include="Assets\IronSource\Scripts\IUnityOfferwall.cs" />
      <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\PlayGamesClientFactory.cs" />
      <Compile Include="Assets\Extensions\GooglePlayGames\ISocialPlatform\PlayGamesLocalUser.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Internal\Interfaces\ICloudStorageProvider.cs" />
      <Compile Include="Assets\Extensions\CloudOnce\Providers\AppleGameCenter\iOSCloudProvider.cs" />
      <Compile Include="Assets\#Scripts\Controllers\CarAI.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Internal\GenericLeaderboardsWrapper.cs" />
-     <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
      <Compile Include="Assets\Extensions\CloudOnce\Internal\Data\JSONObject\JsonInterfaces.cs" />
-     <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\IPlayGamesClient.cs" />
      <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\Video\CaptureOverlayStateListener.cs" />
-     <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Android\AndroidSnapshotMetadata.cs" />
      <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Android\AndroidVideoClient.cs" />
      <Compile Include="Assets\Extensions\CloudOnce\Data\CloudPrefs\CloudDecimal.cs" />
-     <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\Nearby\AdvertisingResult.cs" />
-     <Compile Include="Assets\Extensions\GooglePlayGames\PluginVersion.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Internal\Utils\AppleAchievementUtils.cs" />
-     <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Native\NativeClient.cs" />
-     <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Native\PInvoke\EventManager.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Internal\GenericAchievementsWrapper.cs" />
      <Compile Include="Assets\Extensions\CloudOnce\Internal\Data\iCloud\iCloudBridge.cs" />
      <Compile Include="Assets\IronSource\Scripts\IUnityRewardedVideoManual.cs" />
-     <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Native\NativeVideoClient.cs" />
-     <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\Nearby\DummyNearbyConnectionClient.cs" />
-     <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
      <Compile Include="Assets\IronSource\Scripts\IUnityInitialization.cs" />
-     <Compile Include="Assets\#Scripts\Views\ProgressionBar.cs" />
      <Compile Include="Assets\IronSource\Scripts\IronSourceAdInfo.cs" />
      <Compile Include="Assets\Extensions\CloudOnce\Quick Start Scripts\GoogleSignOutButton.cs" />
      <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\PlayerStats.cs" />
      <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\ScorePageToken.cs" />
-     <Compile Include="Assets\IronSource\Scripts\IronSourceInitializationAndroid.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
-     <Compile Include="Assets\#Scripts\MarketManager.cs" />
      <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\PlayGamesClientConfiguration.cs" />
      <Compile Include="Assets\Extensions\CloudOnce\Internal\CloudProviderBase.cs" />
      <Compile Include="Assets\#Scripts\Views\MenuView.cs" />
-     <Compile Include="Assets\#Scripts\Controllers\DraggingController.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Internal\Utils\EditorLeaderboardUtils.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
-     <Compile Include="Assets\#Scripts\Controllers\SlideAndZoom.cs" />
      <Compile Include="Assets\#Scripts\TileTest.cs" />
      <Compile Include="Assets\Extensions\CloudOnce\Data\CloudPrefs\CloudString.cs" />
-     <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Native\NativeRealtimeMultiplayerClient.cs" />
      <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Native\NativeNearbyConnectionClientFactory.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Quick Start Scripts\LoadSceneOnCloudOnceEvent.cs" />
      <Compile Include="Assets\IronSource\Scripts\IronSourceIAgent.cs" />
      <Compile Include="Assets\#Scripts\InAppReview.cs" />
      <Compile Include="Assets\IronSource\Scripts\IronSourceRewardedVideoManualAndroid.cs" />
-     <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
      <Compile Include="Assets\Extensions\CloudOnce\Internal\Utils\InternetConnectionUtils.cs" />
-     <Compile Include="Assets\IronSource\Scripts\IUnityImpressionData.cs" />
      <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Android\AndroidEventsClient.cs" />
      <Compile Include="Assets\Extensions\CloudOnce\Data\CloudRequestResult.cs" />
-     <Compile Include="Assets\Extensions\GooglePlayGames\OurUtils\PlayGamesHelperObject.cs" />
      <Compile Include="Assets\Extensions\CloudOnce\Data\CloudVariables.cs" />
-     <Compile Include="Assets\IronSource\Scripts\IronSourceEventsDispatcher.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Data\CloudPrefs\CloudCurrencyFloat.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Data\CloudPrefs\CloudUInt.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Internal\Data\JSONObject\JsonHelper.cs" />
      <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\NearbyConnectionClientFactory.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Internal\Data\JSONObject\JsonHelper.cs" />
      <Compile Include="Assets\#Scripts\Controllers\EventManager.cs" />
      <Compile Include="Assets\IronSource\Scripts\IronSourceRewardedVideoAndroid.cs" />
-     <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\Events\IEvent.cs" />
-     <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\SignInHelper.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Mediation\AdColony\Common\AdColony\DummyClient.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
      <Compile Include="Assets\#Scripts\Controllers\MapController.cs" />
-     <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Native\PInvoke\GameServicesBuilder.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
      <Compile Include="Assets\IronSource\Scripts\IronSourceJSON.cs" />
      <Compile Include="Assets\Extensions\CloudOnce\Internal\Data\CloudPrefs\PersistentValue.cs" />
      <Compile Include="Assets\Extensions\CloudOnce\Providers\Cloud.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Internal\CloudOnceEvents.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Data\CloudIDs.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
-     <Compile Include="Assets\BezierCurve.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Providers\GooglePlayGames\GooglePlayGamesCloudProvider.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Quick Start Scripts\AchievementsButton.cs" />
-     <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
+     <Compile Include="Assets\#Scripts\BezierCurve.cs" />
      <Compile Include="Assets\IronSource\Scripts\IronSourceInterstitialEvents.cs" />
-     <Compile Include="Assets\#Scripts\Ads.cs" />
      <Compile Include="Assets\IronSource\Scripts\AdFormat.cs" />
      <Compile Include="Assets\Extensions\CloudOnce\Internal\Data\CloudPrefs\CurrencyValue.cs" />
      <Compile Include="Assets\Extensions\CloudOnce\Data\DataEnums.cs" />
@@ -311,17 +181,154 @@
      <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Native\PInvoke\NativePlayerStats.cs" />
      <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Native\PInvoke\TurnBasedManager.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
+     <Compile Include="Assets\IronSource\Scripts\iOSAgent.cs" />
+     <Compile Include="Assets\#Scripts\UnityAds.cs" />
+     <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Native\PInvoke\GameServices.cs" />
+     <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Internal\Data\DataManager.cs" />
+     <Compile Include="Assets\IronSource\DemoScene\IronSourceDemoScript.cs" />
+     <Compile Include="Assets\#Scripts\Models\BuildingType.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Native\PInvoke\AchievementManager.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Providers\TestProvider\TestProviderStorageWrapper.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Internal\Interfaces\ICloudProvider.cs" />
+     <Compile Include="Assets\IronSource\Scripts\IUnityLevelPlayRewardedVideoManual.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Mediation\AdColony\Platforms\Mediation\AdColonyAppOptionsClientFactory.cs" />
+     <Compile Include="Assets\#Scripts\Controllers\Utils.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\Achievement.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Mediation\AdColony\Api\AdColony\AdColonyAppOptions.cs" />
+     <Compile Include="Assets\IronSource\Scripts\IUnityRewardedVideo.cs" />
+     <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
+     <Compile Include="Assets\IronSource\Scripts\IronSourceBannerLevelPlayAndroid.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\TokenClient.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Internal\Data\JSONObject\JSONObject.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Native\PInvoke\RealtimeManager.cs" />
+     <Compile Include="Assets\#Scripts\#Editor\TilePlacer.cs" />
+     <Compile Include="Assets\GUI PRO Kit - Simple Casual\Scripts\PanelSimpleCasual.cs" />
+     <Compile Include="Assets\#Scripts\IronSourceAds.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Mediation\AdColony\Api\AdColony\AdColonyMediationExtras.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Providers\DummyProvider\DummyStorageWrapper.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Android\AndroidNearbyConnectionClient.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\Nearby\NearbyConnectionConfiguration.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayGames\ISocialPlatform\PlayGamesScore.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\Player.cs" />
+     <Compile Include="Assets\IronSource\Scripts\IronSourceRewardedVideoEvents.cs" />
+     <Compile Include="Assets\IronSource\Scripts\IUnityBanner.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Internal\Interfaces\IPersistent.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Mediation\AdColony\Api\MediationExtras.cs" />
+     <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Native\PInvoke\StatsManager.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\Nearby\ConnectionRequest.cs" />
+     <Compile Include="Assets\#Scripts\Models\BuildingModel.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Internal\Data\CloudPrefs\SyncableCurrency.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayGames\OurUtils\Logger.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Native\PInvoke\VideoManager.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\Video\VideoCaptureState.cs" />
+     <Compile Include="Assets\IronSource\Scripts\IronSourceRewardedVideoLevelPlayManualAndroid.cs" />
+     <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
+     <Compile Include="Assets\IronSource\Scripts\IronSourceSegment.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Native\PInvoke\LeaderboardManager.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\SignInInteractivity.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Quick Start Scripts\LeaderboardsButton.cs" />
+     <Compile Include="Assets\IronSource\Scripts\IUnityLevelPlayRewardedVideo.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Internal\Data\GameData.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Internal\Data\ConflictResolver.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Quick Start Scripts\DeactivateOnCloudOnceEvent.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Android\AndroidHelperFragment.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Data\CloudPrefs\CloudFloat.cs" />
+     <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Quick Start Scripts\DeactivateOnAwakeIfNotGoogle.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Internal\Utils\GoogleAchievementUtils.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Internal\Utils\GoogleLeaderboardUtils.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Internal\Utils\CloudOnceUtils.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\Nearby\EndpointDetails.cs" />
+     <Compile Include="Assets\#Scripts\Controllers\TileView.cs" />
+     <Compile Include="Assets\IronSource\Scripts\IronSourceBannerEvents.cs" />
+     <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Internal\CloudOnceExceptions.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayGames\ISocialPlatform\PlayGamesUserProfile.cs" />
+     <Compile Include="Assets\#Scripts\Controllers\TrafficSystem.cs" />
+     <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayGames\ISocialPlatform\PlayGamesLeaderboard.cs" />
+     <Compile Include="Assets\IronSource\Scripts\IronSourceInterstitialLevelPlayAndroid.cs" />
+     <Compile Include="Assets\IronSource\Scripts\IronSourceMediationSettings.cs" />
+     <Compile Include="Assets\#Scripts\#Editor\WaypointPlacer.cs" />
+     <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
+     <Compile Include="Assets\GUI PRO Kit - Simple Casual\Scripts\PanelControlSimpleCasual.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Internal\Utils\EditorAchievementUtils.cs" />
+     <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+     <Compile Include="Assets\IronSource\Scripts\IUnitySegment.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayGames\OurUtils\NearbyHelperObject.cs" />
+     <Compile Include="Assets\IronSource\Scripts\UnsupportedPlatformAgent.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\Video\VideoCapabilities.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayGames\ISocialPlatform\PlayGamesPlatform.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Internal\UnifiedLeaderboard.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\Nearby\ConnectionResponse.cs" />
+     <Compile Include="Assets\#Scripts\Models\FirebaseProvider.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\CommonStatusCodes.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Data\CloudPrefs\CloudBool.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\SavedGame\ISavedGameMetadata.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Data\CloudPrefs\CloudDateTime.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Internal\Data\CloudPrefs\SyncableItemMetaData.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Data\Achievements.cs" />
+     <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
+     <Compile Include="Assets\IronSource\Scripts\WaterfallConfiguration.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\LeaderboardScoreData.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Data\Leaderboards.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\PlayerProfile.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Internal\Interfaces\ICloudStorageProvider.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Internal\GenericLeaderboardsWrapper.cs" />
+     <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\IPlayGamesClient.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Android\AndroidSnapshotMetadata.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\Nearby\AdvertisingResult.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayGames\PluginVersion.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Internal\Utils\AppleAchievementUtils.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Native\NativeClient.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Native\PInvoke\EventManager.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Internal\GenericAchievementsWrapper.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Native\NativeVideoClient.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\Nearby\DummyNearbyConnectionClient.cs" />
+     <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
+     <Compile Include="Assets\#Scripts\Views\ProgressionBar.cs" />
+     <Compile Include="Assets\IronSource\Scripts\IronSourceInitializationAndroid.cs" />
+     <Compile Include="Assets\#Scripts\MarketManager.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Internal\Utils\EditorLeaderboardUtils.cs" />
+     <Compile Include="Assets\#Scripts\Controllers\DraggingController.cs" />
+     <Compile Include="Assets\#Scripts\Controllers\SlideAndZoom.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Native\NativeRealtimeMultiplayerClient.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Quick Start Scripts\LoadSceneOnCloudOnceEvent.cs" />
+     <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
+     <Compile Include="Assets\IronSource\Scripts\IUnityImpressionData.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayGames\OurUtils\PlayGamesHelperObject.cs" />
+     <Compile Include="Assets\IronSource\Scripts\IronSourceEventsDispatcher.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Data\CloudPrefs\CloudCurrencyFloat.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Data\CloudPrefs\CloudUInt.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\Events\IEvent.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayGames\BasicApi\SignInHelper.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Mediation\AdColony\Common\AdColony\DummyClient.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayGames\Platforms\Native\PInvoke\GameServicesBuilder.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Internal\CloudOnceEvents.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Data\CloudIDs.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Providers\GooglePlayGames\GooglePlayGamesCloudProvider.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Quick Start Scripts\AchievementsButton.cs" />
+     <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
+     <Compile Include="Assets\#Scripts\Ads.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Extensions\CloudOnce\Quick Start Scripts" />
      <Folder Include="Assets\Extensions\GooglePlayGames" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Component\Button\Button_Custom" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Component\Frame\Frame_Demo_Light" />
      <Folder Include="Assets\Extensions\GooglePlayGames\BasicApi\Nearby" />
      <Folder Include="Assets\GoogleMobileAds\Mediation\AdColony\Platforms\Android" />
      <None Include="Assets\Others\TextMesh Pro\Shaders\TMPro.cginc" />
      <Folder Include="Assets\Graphics\Sprites" />
      <Folder Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Sprites" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Scripts" />
      <Folder Include="Assets\GoogleMobileAds\Mediation\AdColony\Plugins\Android" />
      <None Include="Assets\Others\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <Folder Include="Assets\Extensions\CloudOnce\Internal\Data" />
+     <Folder Include="Assets\Editor Default Resources\Firebase" />
      <None Include="Assets\GooglePlayPlugins\com.google.play.common\package.json" />
      <Folder Include="Assets\Others\TextMesh Pro\Sprites" />
      <Folder Include="Assets\Extensions\GooglePlayGames\Platforms\Android" />
@@ -330,8 +337,11 @@
      <Folder Include="Assets\Others\TextMesh Pro\Resources\Sprite Assets" />
      <Folder Include="Assets\IronSource\Plugins\iOS" />
      <Folder Include="Assets\IronSource\Plugins\Android\IronSource.androidlib" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Component\Frame\Frame_Demo_Dark" />
      <Folder Include="Assets\GoogleMobileAds\Mediation" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Component" />
      <Folder Include="Assets\Extensions\CloudOnce\Internal\Interfaces" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Demo\Demo_Icon" />
      <Folder Include="Assets\Prefabs" />
      <Folder Include="Assets\Extensions\CloudOnce\Providers\DummyProvider" />
      <Folder Include="Assets\#Scripts\Views" />
@@ -339,11 +349,14 @@
      <Folder Include="Assets\Extensions\CloudOnce\Internal" />
      <Folder Include="Assets\ExternalDependencyManager" />
      <Folder Include="Assets\Extensions\GooglePlayGames\Platforms\Native\PInvoke" />
+     <Folder Include="Assets\Firebase\m2repository\com" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Component\Frame\Frame_Demo_Common" />
      <Folder Include="Assets\#Scripts" />
      <Folder Include="Assets\Prefabs\Buildings" />
      <None Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
-     <Folder Include="Assets\UML" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Demo" />
      <None Include="Assets\Extensions\CloudOnce\Internal\Data\Templates\LeaderboardsPropertyTemplate.cs.txt" />
+     <Folder Include="Assets\Editor Default Resources" />
      <Folder Include="Assets\Scenes" />
      <Folder Include="Assets\Extensions\GooglePlayGames\Platforms\Native" />
      <None Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
@@ -351,34 +364,67 @@
      <Folder Include="Assets\#Scripts\#Editor" />
      <Folder Include="Assets\Extensions\CloudOnce\Internal\Data\iCloud" />
      <None Include="Assets\GoogleMobileAds\GoogleMobileAds_version-8.3.0_manifest.txt" />
+     <Folder Include="Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\11.3.0" />
+     <Folder Include="Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\11.3.0" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Component\UI_Etc" />
+     <Folder Include="Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\11.3.0" />
      <None Include="Assets\Others\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Prefabs\Prefabs_DemoScene_Panels\Dark" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Component\Button\Button_Demo_Dark" />
      <None Include="Assets\Others\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
      <Folder Include="Assets\Graphics\Sprites\Cars\Pink" />
      <Folder Include="Assets\Others\TextMesh Pro\Resources" />
      <Folder Include="Assets\Extensions\GooglePlayGames\Platforms\Native\Platforms\Android" />
+     <Folder Include="Assets\StreamingAssets" />
+     <Folder Include="Assets\Firebase\m2repository\com\google\firebase" />
+     <Folder Include="Assets\Firebase\m2repository\com\google" />
      <Folder Include="Assets\GooglePlayPlugins" />
      <Folder Include="Assets\GoogleMobileAds\Mediation\AdColony\Platforms\iOS\AdColony" />
      <Folder Include="Assets\Extensions" />
      <None Include="Assets\Extensions\CloudOnce\Internal\Data\Templates\CloudVariablesPropertyTemplate.cs.txt" />
      <Folder Include="Assets\GoogleMobileAds\Mediation\AdColony\Plugins\iOS" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Component\Label" />
+     <None Include="Assets\google-services.json" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Component\Slider" />
      <None Include="Assets\IronSource\Plugins\Android\IronSource.androidlib\AndroidManifest.xml" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Component\Slider\Slider_Custom" />
      <Folder Include="Assets\Extensions\GooglePlayGames\Platforms" />
      <Folder Include="Assets\GooglePlayPlugins\com.google.play.review" />
+     <Folder Include="Assets\Firebase\m2repository" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Demo\Demo_Play" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Component\Slider\Slider_Demo_Common" />
      <None Include="Assets\Others\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Prefabs\Prefabs_Demo_Paly" />
      <Folder Include="Assets\IronSource\Plugins\Android\IronSource.androidlib\libs" />
+     <Folder Include="Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Prefabs\Prefabs_Component_Labels" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Component\Frame\Frame_Custom" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Component\Frame" />
      <Folder Include="Assets\Others\TextMesh Pro" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Demo\Demo_CountryFlag" />
      <Folder Include="Assets\#Scripts\Controllers" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Component\Slider\Slider_Demo_Dark" />
+     <Folder Include="Assets\Firebase\Plugins" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Component\Icon_PictoIcons_(x2)" />
      <Folder Include="Assets\Resources\Buildings" />
      <Folder Include="Assets\Extensions\CloudOnce" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Prefabs\Prefabs_DemoScene_Panels" />
+     <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml" />
+     <Folder Include="Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity" />
      <Folder Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Fonts" />
      <Folder Include="Assets\Extensions\CloudOnce\Data" />
      <Folder Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Resources" />
      <None Include="Assets\GoogleMobileAds\link.xml" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Component\Button" />
      <Folder Include="Assets\GoogleMobileAds\Mediation\AdColony" />
      <Folder Include="Assets\Extensions\CloudOnce\Providers\TestProvider" />
      <Folder Include="Assets\GooglePlayPlugins\com.google.play.core\Proguard" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Demo\Demo_Background" />
      <Folder Include="Assets\IronSource\Plugins\Android" />
+     <Folder Include="Assets\Firebase" />
      <Folder Include="Assets\GoogleMobileAds\Mediation\AdColony\Plugins\Android\GoogleMobileAdsAdColonyMediation" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Prefabs" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Prefabs\Prefabs_Component_Frames" />
      <None Include="Assets\Others\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
      <Folder Include="Assets\#Scripts\Models" />
      <None Include="Assets\Extensions\CloudOnce\Internal\Data\Templates\AchievementsPropertyTemplate.cs.txt" />
@@ -386,13 +432,18 @@
      <None Include="Assets\Others\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
      <Folder Include="Assets\Graphics\Sprites\Cars" />
      <Folder Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Materials" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Demo\Demo_Image" />
      <None Include="Assets\Others\TextMesh Pro\Shaders\TMP_SDF.shader" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\+Document README+" />
      <None Include="Assets\Others\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
      <None Include="Assets\Others\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <Folder Include="Assets\Extensions\GooglePlayGames\BasicApi\Video" />
+     <None Include="Assets\StreamingAssets\google-services-desktop.json" />
      <None Include="Assets\Others\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
      <Folder Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts" />
+     <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\maven-metadata.xml" />
      <None Include="Assets\Extensions\CloudOnce\Internal\Data\Templates\LeaderboardsTemplate.cs.txt" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Component\Slider\Slider_Demo_Light" />
      <Folder Include="Assets\Graphics\Sprites\Construction" />
      <Folder Include="Assets\GoogleMobileAds\Resources" />
      <Folder Include="Assets\GooglePlayPlugins\com.google.play.core" />
@@ -400,20 +451,30 @@
      <Folder Include="Assets\Others\TextMesh Pro\Shaders" />
      <Folder Include="Assets\GoogleMobileAds\Mediation\AdColony\Plugins" />
      <Folder Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Resources\Sprite Assets" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Fonts" />
      <Folder Include="Assets\Others\TextMesh Pro\Resources\Style Sheets" />
      <Folder Include="Assets\Others\TextMesh Pro\Fonts" />
      <Folder Include="Assets\Extensions\CloudOnce\Data\CloudPrefs" />
      <None Include="Assets\Resources\BillingMode.json" />
      <Folder Include="Assets\GooglePlayPlugins\com.google.play.review\Proguard" />
      <None Include="Assets\Extensions\CloudOnce\readme.txt" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Demo\Demo_Character" />
      <None Include="Assets\Others\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <None Include="Assets\GooglePlayPlugins\com.google.play.review\Proguard\review.txt" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Component\Popup\Popup_Demo_Common" />
      <Folder Include="Assets\IronSource\Scripts" />
      <Folder Include="Assets\Resources" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Prefabs\Prefabs_Component_Sliders" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Component\Icon_ItemIcons_(x2)" />
      <Folder Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Prefabs" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Component\Button\Button_Demo_Light" />
      <Folder Include="Assets\Extensions\GooglePlayGames\BasicApi\SavedGame" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Prefabs\Prefabs_Component_Popups" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Preview" />
      <None Include="Assets\Extensions\CloudOnce\link.xml" />
      <None Include="Assets\Extensions\CloudOnce\Internal\Data\Templates\CloudVariablesTemplate.cs.txt" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Prefabs\Prefabs_DemoScene_Panels\Light" />
      <None Include="Assets\GooglePlayPlugins\com.google.play.core\package.json" />
      <Folder Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scenes" />
      <Folder Include="Assets\Extensions\CloudOnce\Internal\Data\Templates" />
@@ -432,18 +493,28 @@
      <Folder Include="Assets\Extensions\GooglePlayGames\OurUtils" />
      <Folder Include="Assets\Graphics" />
      <Folder Include="Assets\Extensions\GooglePlayGames\BasicApi" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Component\Popup\Popup_Custom" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Component\Popup\Popup_Demo_Dark" />
      <Folder Include="Assets\IronSource\DemoScene" />
+     <Folder Include="Assets\Firebase\Plugins\iOS" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite" />
      <Folder Include="Assets\Graphics\Sprites\UI" />
      <None Include="Assets\Extensions\CloudOnce\Internal\Data\Templates\AndroidManifestTemplate.xml" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Demo\Demo_ItemIcon_(OriginalSize)" />
+     <Folder Include="Assets\Graphics\Sprites\Tiles" />
      <Folder Include="Assets\GoogleMobileAds\Mediation\AdColony\Platforms\Android\AdColony" />
      <Folder Include="Assets\Graphics\Sprites\Cars\Black" />
      <Folder Include="Assets\Extensions\GooglePlayGames\Platforms\Native\Platforms" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Prefabs\Prefabs_Component_Buttons" />
      <Folder Include="Assets\Extensions\GooglePlayGames\ISocialPlatform" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Component\Popup" />
      <None Include="Assets\Extensions\CloudOnce\CloudOnceSettings.txt" />
      <Folder Include="Assets\IronSource\Plugins" />
      <None Include="Assets\Others\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+     <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\maven-metadata.xml" />
      <Folder Include="Assets\GoogleMobileAds\Mediation\AdColony\Platforms\Mediation" />
      <None Include="Assets\Others\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Scene" />
      <Folder Include="Assets\Extensions\CloudOnce\Providers\GooglePlayGames" />
      <Folder Include="Assets\Extensions\CloudOnce\Internal\Data\JSONObject" />
      <Folder Include="Assets\GooglePlayPlugins\com.google.android.appbundle" />
@@ -453,6 +524,7 @@
      <Folder Include="Assets\Others\TextMesh Pro\Documentation" />
      <Folder Include="Assets\Extensions\CloudOnce\Internal\Data\CloudPrefs" />
      <Folder Include="Assets\GoogleMobileAds\Mediation\AdColony\Api\AdColony" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Prefabs\Prefabs_Component_UI_Etc" />
      <Folder Include="Assets\Others\TextMesh Pro\Examples &amp; Extras" />
      <None Include="Assets\Others\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
      <None Include="Assets\GooglePlayPlugins\com.google.android.appbundle\package.json" />
@@ -463,10 +535,13 @@
      <Folder Include="Assets\GoogleMobileAds" />
      <Folder Include="Assets\IronSource" />
      <Folder Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Resources\Fonts &amp; Materials" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Component\Button\Button_Demo_Common" />
      <Folder Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Resources\Color Gradient Presets" />
      <Folder Include="Assets\Others" />
      <None Include="Assets\Others\TextMesh Pro\Sprites\EmojiOne.json" />
      <Folder Include="Assets\GoogleMobileAds\Mediation\AdColony\Platforms" />
+     <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Component\Popup\Popup_Demo_Light" />
+     <Folder Include="Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity" />
      <Folder Include="Assets\Extensions\CloudOnce\Providers" />
      <None Include="Assets\Others\TextMesh Pro\Shaders\TMP_Sprite.shader" />
      <None Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
@@ -708,8 +783,8 @@
      <Reference Include="UnityEditor.UnityConnectModule">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.19f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.Burst.Unsafe">
-     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.Unsafe.dll</HintPath>
+     <Reference Include="Firebase.TaskExtension">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Assets\Firebase\Plugins\Firebase.TaskExtension.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
@@ -724,10 +799,31 @@
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Assets\GoogleMobileAds\GoogleMobileAds.Unity.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Cecil.Pdb">
-     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
      </Reference>
      <Reference Include="Newtonsoft.Json">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Burst.Cecil.Mdb">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Burst.Cecil">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.dll</HintPath>
+     </Reference>
+     <Reference Include="Google.MiniJson">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Assets\Firebase\Plugins\Google.MiniJson.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Burst.Cecil.Rocks">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
+     </Reference>
+     <Reference Include="GoogleMobileAds.Ump">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Assets\GoogleMobileAds\GoogleMobileAds.Ump.dll</HintPath>
+     </Reference>
+     <Reference Include="Firebase.App">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Assets\Firebase\Plugins\Firebase.App.dll</HintPath>
+     </Reference>
+     <Reference Include="Firebase.Database">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Assets\Firebase\Plugins\Firebase.Database.dll</HintPath>
      </Reference>
      <Reference Include="GoogleMobileAds.Core">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Assets\GoogleMobileAds\GoogleMobileAds.Core.dll</HintPath>
@@ -735,17 +831,11 @@
      <Reference Include="GoogleMobileAds.Ump.Unity">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Assets\GoogleMobileAds\GoogleMobileAds.Ump.Unity.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.Burst.Cecil.Mdb">
-     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
+     <Reference Include="Firebase.Platform">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Assets\Firebase\Plugins\Firebase.Platform.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.Burst.Cecil">
-     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Burst.Cecil.Rocks">
-     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
-     </Reference>
-     <Reference Include="GoogleMobileAds.Ump">
-     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Assets\GoogleMobileAds\GoogleMobileAds.Ump.dll</HintPath>
+     <Reference Include="Firebase.Auth">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Assets\Firebase\Plugins\Firebase.Auth.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.iOS.Extensions.Xcode">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.19f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -1140,6 +1230,9 @@
      <Reference Include="Unity.2D.PixelPerfect">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.RenderPipelines.Universal.Shaders">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.Notifications">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.Notifications.dll</HintPath>
      </Reference>
@@ -1161,6 +1254,9 @@
      <Reference Include="UnityEngine.Advertisements">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\UnityEngine.Advertisements.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.Searcher.Editor">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.2D.IK.Editor">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll</HintPath>
      </Reference>
@@ -1176,6 +1272,9 @@
      <Reference Include="Unity.Rider.Editor">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+     </Reference>
      <Reference Include="UnityEngine.UI">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
      </Reference>
@@ -1185,8 +1284,14 @@
      <Reference Include="Unity.2D.IK.Runtime">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.ShaderGraph.Editor">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
+     </Reference>
      <Reference Include="UnityEngine.Purchasing.Codeless">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\UnityEngine.Purchasing.Codeless.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Mathematics.Editor">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
@@ -1215,6 +1320,12 @@
      <Reference Include="Unity.Recorder.Base">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.Recorder.Base.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+     </Reference>
+     <Reference Include="PPv2URPConverters">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.VisualStudio.Editor">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
      </Reference>
@@ -1238,6 +1349,9 @@
      </Reference>
      <Reference Include="Unity.InternalAPIEditorBridge.001">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.RenderPipelines.Core.Runtime">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Flow">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
@@ -1266,6 +1380,9 @@
      <Reference Include="UnityEngine.Purchasing.SecurityCore">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\UnityEngine.Purchasing.SecurityCore.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.RenderPipelines.Universal.Editor">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.VisualScripting.Shared.Editor">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
      </Reference>
@@ -1284,6 +1401,9 @@
      <Reference Include="Unity.Timeline.Editor">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+     </Reference>
      <Reference Include="UnityEngine.Purchasing.Stores">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\UnityEngine.Purchasing.Stores.dll</HintPath>
      </Reference>
@@ -1298,6 +1418,9 @@
      </Reference>
      <Reference Include="UnityEngine.Advertisements.Editor">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\UnityEngine.Advertisements.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.RenderPipelines.Core.Editor">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.SpriteShape.Runtime">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>

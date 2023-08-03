@@ -1,0 +1,37 @@
+{
+  "project_info": {
+    "project_number": "948763437591",
+    "firebase_url": "https://multi-millionaire-city-6012586-default-rtdb.firebaseio.com",
+    "project_id": "multi-millionaire-city-6012586",
+    "storage_bucket": "multi-millionaire-city-6012586.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:948763437591:ios:0a6c55aae16128fef7ca52",
+        "android_client_info": {
+          "package_name": "com.eight.multimillionaire"
+        }
+      },
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6FV_IKHjQvbpuilkSrLUgcQ8_4uAQo5w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 0
+        },
+        "appinvite_service": {
+          "status": 1
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "948763437591-j4gkj0c1dlakgrpjmje3bga4djoutu8l.apps.googleusercontent.com"
+        }
+      ]
+    }
+  ],
+  "configuration_version": "1"
+}

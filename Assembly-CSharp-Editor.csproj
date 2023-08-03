@@ -46,29 +46,29 @@
      <Compile Include="Assets\Extensions\CloudOnce\Internal\Editor\Utils\GooglePlayGamesSetup\GPGSStrings.cs" />
      <Compile Include="Assets\Extensions\CloudOnce\Internal\Editor\Data\PlatformIdData.cs" />
      <Compile Include="Assets\IronSource\Editor\IronSourceManifestProcessor.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Internal\Editor\Data\CloudVariableData.cs" />
-     <Compile Include="Assets\IronSource\Editor\IAdapterSettings.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Internal\Editor\Data\CloudOncePaths.cs" />
      <Compile Include="Assets\Extensions\CloudOnce\Internal\Editor\Utils\BuildUtils.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Internal\Editor\Data\PluginVersion.cs" />
-     <Compile Include="Assets\IronSource\Editor\IronSourceMediationSettingsInspector.cs" />
      <Compile Include="Assets\Extensions\CloudOnce\Internal\Editor\Utils\iOSPostBuild.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Internal\Editor\Utils\GooglePlayGamesSetup\GPGSUtil.cs" />
      <Compile Include="Assets\IronSource\Editor\IronSourceMediatedNetworkSettingsInspector.cs" />
      <Compile Include="Assets\Extensions\CloudOnce\Internal\Editor\CloudOnceEditor.cs" />
      <Compile Include="Assets\Extensions\CloudOnce\Internal\Editor\Utils\PlistBuddyHelper.cs" />
      <Compile Include="Assets\IronSource\Editor\IronSourceMediatedNetworkSettings.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Internal\Editor\Utils\AndroidManifestModifier.cs" />
+     <Compile Include="Assets\IronSource\Editor\IronSourcePlistProcessor.cs" />
+     <Compile Include="Assets\IronSource\Editor\IronSourceMenu.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Internal\Data\JSONObject\Editor\EditorJsonHelper.cs" />
+     <Compile Include="Assets\IronSource\Editor\IronSourceEditorCoroutines.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Internal\Editor\Data\CloudVariableData.cs" />
+     <Compile Include="Assets\IronSource\Editor\IAdapterSettings.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Internal\Editor\Data\CloudOncePaths.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Internal\Editor\Data\PluginVersion.cs" />
+     <Compile Include="Assets\IronSource\Editor\IronSourceMediationSettingsInspector.cs" />
+     <Compile Include="Assets\Extensions\CloudOnce\Internal\Editor\Utils\GooglePlayGamesSetup\GPGSUtil.cs" />
      <Compile Include="Assets\IronSource\Editor\MobileDependencyResolverInstallerLp.cs" />
      <Compile Include="Assets\IronSource\Editor\IronSourceDependenciesManagerConstants.cs" />
      <Compile Include="Assets\Extensions\CloudOnce\Internal\Editor\MenuLinks.cs" />
      <Compile Include="Assets\IronSource\Editor\IronSourceDependenciesManager.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Internal\Editor\Utils\AndroidManifestModifier.cs" />
-     <Compile Include="Assets\IronSource\Editor\IronSourcePlistProcessor.cs" />
      <Compile Include="Assets\Extensions\CloudOnce\Internal\Editor\CloudOnceUpgrader.cs" />
-     <Compile Include="Assets\IronSource\Editor\IronSourceMenu.cs" />
-     <Compile Include="Assets\Extensions\CloudOnce\Internal\Data\JSONObject\Editor\EditorJsonHelper.cs" />
      <Compile Include="Assets\IronSource\Editor\IronSourceBuildPostprocessor.cs" />
-     <Compile Include="Assets\IronSource\Editor\IronSourceEditorCoroutines.cs" />
      <Compile Include="Assets\Extensions\CloudOnce\Internal\Editor\Utils\ValidationUtils.cs" />
      <Compile Include="Assets\Extensions\CloudOnce\Internal\Editor\Utils\GooglePlayGamesSetup\GPGAndroidSetup.cs" />
      <Folder Include="Assets\Extensions\GooglePlayGames\Editor\m2repository\com\google\games\gpgs-plugin-support" />
@@ -78,6 +78,7 @@
      <Folder Include="Assets\Extensions\CloudOnce\Internal\Editor\Utils" />
      <Folder Include="Assets\ExternalDependencyManager\Editor" />
      <Folder Include="Assets\Extensions\GooglePlayGames\Editor\m2repository\com" />
+     <None Include="Assets\Firebase\Editor\FirebaseAuth_version-11.3.0_manifest.txt" />
      <Folder Include="Assets\IronSource\Editor" />
      <None Include="Assets\GoogleMobileAds\Mediation\AdColony\Editor\AdColonyMediationDependencies.xml" />
      <Folder Include="Assets\Extensions\GooglePlayGames\Editor" />
@@ -90,8 +91,12 @@
      <Folder Include="Assets\Extensions\CloudOnce\Internal\Editor\Data" />
      <Folder Include="Assets\GooglePlayPlugins\com.google.play.review\Editor" />
      <None Include="Assets\Extensions\GooglePlayGames\Editor\GooglePlayGamesPluginDependencies.xml" />
+     <None Include="Assets\Firebase\Editor\FirebaseDatabase_version-11.3.0_manifest.txt" />
      <None Include="Assets\GooglePlayPlugins\com.google.play.review\Editor\Dependencies.xml" />
+     <Folder Include="Assets\Firebase\Editor" />
+     <None Include="Assets\Firebase\Editor\AuthDependencies.xml" />
      <Folder Include="Assets\Extensions\CloudOnce\Internal\Editor\Images" />
+     <None Include="Assets\Firebase\Editor\AppDependencies.xml" />
      <Folder Include="Assets\Extensions\GooglePlayGames\Editor\m2repository\com\google\games" />
      <Folder Include="Assets\Extensions\GooglePlayGames\Editor\m2repository\com\google\games\gpgs-plugin-support\0.10.14" />
      <None Include="Assets\IronSource\Editor\IronSourceSDKDependencies.xml" />
@@ -99,6 +104,7 @@
      <Folder Include="Assets\Extensions\CloudOnce\Internal\Data\JSONObject\Editor" />
      <Folder Include="Assets\GoogleMobileAds\Mediation\AdColony\Editor" />
      <Folder Include="Assets\GooglePlayPlugins\com.google.play.core\Editor" />
+     <None Include="Assets\Firebase\Editor\DatabaseDependencies.xml" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.19f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
@@ -372,17 +378,11 @@
      <Reference Include="Unity.Plastic.Newtonsoft.Json">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\PackageCache\com.unity.collab-proxy@2.0.0\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
      </Reference>
-     <Reference Include="Google.IOSResolver">
-     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Assets\ExternalDependencyManager\Editor\1.2.176\Google.IOSResolver.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.Plastic.Antlr3.Runtime">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\PackageCache\com.unity.collab-proxy@2.0.0\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.Burst.Unsafe">
-     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.Unsafe.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualScripting.TextureAssets">
-     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
+     <Reference Include="Firebase.TaskExtension">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Assets\Firebase\Plugins\Firebase.TaskExtension.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
@@ -390,35 +390,20 @@
      <Reference Include="GoogleMobileAds.Common">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Assets\GoogleMobileAds\GoogleMobileAds.Common.dll</HintPath>
      </Reference>
-     <Reference Include="Google.VersionHandler">
-     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Assets\ExternalDependencyManager\Editor\Google.VersionHandler.dll</HintPath>
-     </Reference>
      <Reference Include="GoogleMobileAds">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Assets\GoogleMobileAds\GoogleMobileAds.dll</HintPath>
      </Reference>
      <Reference Include="GoogleMobileAds.Unity">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Assets\GoogleMobileAds\GoogleMobileAds.Unity.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.VisualScripting.IonicZip">
-     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.Burst.Cecil.Pdb">
-     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
      </Reference>
      <Reference Include="Newtonsoft.Json">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
      </Reference>
-     <Reference Include="GoogleMobileAds.Core">
-     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Assets\GoogleMobileAds\GoogleMobileAds.Core.dll</HintPath>
-     </Reference>
-     <Reference Include="GoogleMobileAds.Ump.Unity">
-     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Assets\GoogleMobileAds\GoogleMobileAds.Ump.Unity.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualScripting.YamlDotNet">
-     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.Burst.Cecil.Mdb">
-     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
      </Reference>
      <Reference Include="unityplastic">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\PackageCache\com.unity.collab-proxy@2.0.0\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
@@ -430,13 +415,52 @@
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Assets\ExternalDependencyManager\Editor\1.2.176\Google.JarResolver.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Cecil">
-     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.dll</HintPath>
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.dll</HintPath>
+     </Reference>
+     <Reference Include="Google.MiniJson">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Assets\Firebase\Plugins\Google.MiniJson.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Cecil.Rocks">
-     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
      </Reference>
      <Reference Include="GoogleMobileAds.Ump">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Assets\GoogleMobileAds\GoogleMobileAds.Ump.dll</HintPath>
+     </Reference>
+     <Reference Include="Firebase.App">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Assets\Firebase\Plugins\Firebase.App.dll</HintPath>
+     </Reference>
+     <Reference Include="Google.IOSResolver">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Assets\ExternalDependencyManager\Editor\1.2.176\Google.IOSResolver.dll</HintPath>
+     </Reference>
+     <Reference Include="Firebase.Database">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Assets\Firebase\Plugins\Firebase.Database.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.TextureAssets">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
+     </Reference>
+     <Reference Include="Google.VersionHandler">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Assets\ExternalDependencyManager\Editor\Google.VersionHandler.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.IonicZip">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
+     </Reference>
+     <Reference Include="Firebase.Editor">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Assets\Firebase\Editor\Firebase.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="GoogleMobileAds.Core">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Assets\GoogleMobileAds\GoogleMobileAds.Core.dll</HintPath>
+     </Reference>
+     <Reference Include="GoogleMobileAds.Ump.Unity">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Assets\GoogleMobileAds\GoogleMobileAds.Ump.Unity.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.YamlDotNet">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
+     </Reference>
+     <Reference Include="Firebase.Platform">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Assets\Firebase\Plugins\Firebase.Platform.dll</HintPath>
+     </Reference>
+     <Reference Include="Firebase.Auth">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Assets\Firebase\Plugins\Firebase.Auth.dll</HintPath>
      </Reference>
      <Reference Include="nunit.framework">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
@@ -849,6 +873,9 @@
      <Reference Include="Unity.2D.PixelPerfect">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.RenderPipelines.Universal.Shaders">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.Notifications">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.Notifications.dll</HintPath>
      </Reference>
@@ -870,6 +897,9 @@
      <Reference Include="UnityEngine.Advertisements">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\UnityEngine.Advertisements.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.Searcher.Editor">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.2D.IK.Editor">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll</HintPath>
      </Reference>
@@ -885,6 +915,9 @@
      <Reference Include="Unity.Rider.Editor">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+     </Reference>
      <Reference Include="UnityEngine.UI">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
      </Reference>
@@ -894,8 +927,14 @@
      <Reference Include="Unity.2D.IK.Runtime">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.ShaderGraph.Editor">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
+     </Reference>
      <Reference Include="UnityEngine.Purchasing.Codeless">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\UnityEngine.Purchasing.Codeless.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Mathematics.Editor">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
@@ -924,6 +963,12 @@
      <Reference Include="Unity.Recorder.Base">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.Recorder.Base.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+     </Reference>
+     <Reference Include="PPv2URPConverters">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.VisualStudio.Editor">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
      </Reference>
@@ -947,6 +992,9 @@
      </Reference>
      <Reference Include="Unity.InternalAPIEditorBridge.001">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.RenderPipelines.Core.Runtime">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Flow">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
@@ -975,6 +1023,9 @@
      <Reference Include="UnityEngine.Purchasing.SecurityCore">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\UnityEngine.Purchasing.SecurityCore.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.RenderPipelines.Universal.Editor">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.VisualScripting.Shared.Editor">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
      </Reference>
@@ -993,6 +1044,9 @@
      <Reference Include="Unity.Timeline.Editor">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+     </Reference>
      <Reference Include="UnityEngine.Purchasing.Stores">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\UnityEngine.Purchasing.Stores.dll</HintPath>
      </Reference>
@@ -1007,6 +1061,9 @@
      </Reference>
      <Reference Include="UnityEngine.Advertisements.Editor">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\UnityEngine.Advertisements.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.RenderPipelines.Core.Editor">
+     <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.SpriteShape.Runtime">
      <HintPath>C:\Users\user\Documents\GitHub\FinalProject_Mucahit-Aygun\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
