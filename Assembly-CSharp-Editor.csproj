@@ -1097,6 +1097,34 @@
       <Project>{80eea640-013b-b83a-4d6d-a8b2678f4add}</Project>
       <Name>GoogleMobileAds.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="SimpleInspectorAttributes.csproj">
+      <Project>{eb47772d-d869-c595-97ee-ac06a0136f94}</Project>
+      <Name>SimpleInspectorAttributes</Name>
+    </ProjectReference>
+    <ProjectReference Include="SimpleScrollSnapEditor.csproj">
+      <Project>{cd4f667e-cc2e-ee96-239c-fb49b2f712ee}</Project>
+      <Name>SimpleScrollSnapEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Utilities.csproj">
+      <Project>{25c2e57c-930c-2c99-e2e7-abc523bf7dda}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="UtilitiesEditor.csproj">
+      <Project>{88a68530-a47d-5556-d1d9-4eef950cfc81}</Project>
+      <Name>UtilitiesEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="CopyrightNoticeEditor.csproj">
+      <Project>{d8031790-b27d-b75b-b62b-ae1ccdd33b1d}</Project>
+      <Name>CopyrightNoticeEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="SimpleInspectorAttributesEditor.csproj">
+      <Project>{3a647f34-723c-0581-2dd0-273fb4997c94}</Project>
+      <Name>SimpleInspectorAttributesEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="SimpleScrollSnap.csproj">
+      <Project>{9c108da7-7eda-1f96-1180-128a69006491}</Project>
+      <Name>SimpleScrollSnap</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

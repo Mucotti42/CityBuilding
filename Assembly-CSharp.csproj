@@ -314,7 +314,13 @@
      <Compile Include="Assets\Extensions\CloudOnce\Quick Start Scripts\AchievementsButton.cs" />
      <Compile Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
      <Compile Include="Assets\#Scripts\Ads.cs" />
+     <Compile Include="Assets\Simple Scroll-Snap\Examples\Example 6 (3D Shape Selection)\Scripts\Rotator.cs" />
+     <Compile Include="Assets\Simple Scroll-Snap\Examples\Example 1 (macOS Finder)\Scripts\FileUI.cs" />
+     <Compile Include="Assets\Simple Scroll-Snap\Examples\_Common\Scripts\ExpandInformation.cs" />
+     <Compile Include="Assets\Simple Scroll-Snap\Examples\Example 3 (Slot Machine)\Scripts\SlotMachine.cs" />
+     <Compile Include="Assets\Simple Scroll-Snap\Examples\Example 5 (Dynamic Content)\Scripts\DynamicContent.cs" />
      <Folder Include="Assets" />
+     <Folder Include="Assets\Simple Scroll-Snap\Examples\Example 2 (iOS Home Screen)\Sprites" />
      <Folder Include="Assets\Extensions\CloudOnce\Quick Start Scripts" />
      <Folder Include="Assets\Extensions\GooglePlayGames" />
      <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Component\Button\Button_Custom" />
@@ -322,20 +328,26 @@
      <Folder Include="Assets\Extensions\GooglePlayGames\BasicApi\Nearby" />
      <Folder Include="Assets\GoogleMobileAds\Mediation\AdColony\Platforms\Android" />
      <None Include="Assets\Others\TextMesh Pro\Shaders\TMPro.cginc" />
+     <Folder Include="Assets\Simple Scroll-Snap\Examples\Example 3 (Slot Machine)\Sprites" />
      <Folder Include="Assets\Graphics\Sprites" />
      <Folder Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Sprites" />
      <Folder Include="Assets\GUI PRO Kit - Simple Casual\Scripts" />
      <Folder Include="Assets\GoogleMobileAds\Mediation\AdColony\Plugins\Android" />
+     <Folder Include="Assets\Simple Scroll-Snap\Examples\Example 4 (Pinned Map)\Scenes" />
      <None Include="Assets\Others\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <Folder Include="Assets\Extensions\CloudOnce\Internal\Data" />
      <Folder Include="Assets\Editor Default Resources\Firebase" />
      <None Include="Assets\GooglePlayPlugins\com.google.play.common\package.json" />
+     <Folder Include="Assets\Simple Scroll-Snap\Examples" />
      <Folder Include="Assets\Others\TextMesh Pro\Sprites" />
      <Folder Include="Assets\Extensions\GooglePlayGames\Platforms\Android" />
      <Folder Include="Assets\GoogleMobileAds\Mediation\AdColony\Api" />
      <Folder Include="Assets\GoogleMobileAds\Mediation\AdColony\Common" />
+     <Folder Include="Assets\Simple Scroll-Snap\Examples\Example 1 (macOS Finder)\Scripts" />
+     <Folder Include="Assets\Simple Scroll-Snap\Prefabs" />
      <Folder Include="Assets\Others\TextMesh Pro\Resources\Sprite Assets" />
      <Folder Include="Assets\IronSource\Plugins\iOS" />
+     <Folder Include="Assets\Simple Scroll-Snap\Examples\_Common\Scripts" />
      <Folder Include="Assets\IronSource\Plugins\Android\IronSource.androidlib" />
      <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Component\Frame\Frame_Demo_Dark" />
      <Folder Include="Assets\GoogleMobileAds\Mediation" />
@@ -350,17 +362,21 @@
      <Folder Include="Assets\ExternalDependencyManager" />
      <Folder Include="Assets\Extensions\GooglePlayGames\Platforms\Native\PInvoke" />
      <Folder Include="Assets\Firebase\m2repository\com" />
+     <Folder Include="Assets\Simple Scroll-Snap\Examples\Example 5 (Dynamic Content)\Prefabs" />
      <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Component\Frame\Frame_Demo_Common" />
      <Folder Include="Assets\#Scripts" />
      <Folder Include="Assets\Prefabs\Buildings" />
+     <Folder Include="Assets\Simple Scroll-Snap\Examples\Example 1 (macOS Finder)\Sprites" />
      <None Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
      <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Demo" />
      <None Include="Assets\Extensions\CloudOnce\Internal\Data\Templates\LeaderboardsPropertyTemplate.cs.txt" />
      <Folder Include="Assets\Editor Default Resources" />
      <Folder Include="Assets\Scenes" />
+     <Folder Include="Assets\Simple Scroll-Snap\Examples\Example 5 (Dynamic Content)\Scenes" />
      <Folder Include="Assets\Extensions\GooglePlayGames\Platforms\Native" />
      <None Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
      <Folder Include="Assets\Others\TextMesh Pro\Resources\Fonts &amp; Materials" />
+     <Folder Include="Assets\Simple Scroll-Snap\Examples\_Common" />
      <Folder Include="Assets\#Scripts\#Editor" />
      <Folder Include="Assets\Extensions\CloudOnce\Internal\Data\iCloud" />
      <None Include="Assets\GoogleMobileAds\GoogleMobileAds_version-8.3.0_manifest.txt" />
@@ -397,6 +413,7 @@
      <Folder Include="Assets\GUI PRO Kit - Simple Casual\Prefabs\Prefabs_Demo_Paly" />
      <Folder Include="Assets\IronSource\Plugins\Android\IronSource.androidlib\libs" />
      <Folder Include="Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity" />
+     <Folder Include="Assets\Simple Scroll-Snap\Examples\Example 5 (Dynamic Content)\Scripts" />
      <Folder Include="Assets\GUI PRO Kit - Simple Casual\Prefabs\Prefabs_Component_Labels" />
      <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Component\Frame\Frame_Custom" />
      <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Component\Frame" />
@@ -404,6 +421,7 @@
      <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Demo\Demo_CountryFlag" />
      <Folder Include="Assets\#Scripts\Controllers" />
      <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Component\Slider\Slider_Demo_Dark" />
+     <Folder Include="Assets\Simple Scroll-Snap\Examples\_Common\Sprites" />
      <Folder Include="Assets\Firebase\Plugins" />
      <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Component\Icon_PictoIcons_(x2)" />
      <Folder Include="Assets\Resources\Buildings" />
@@ -411,6 +429,8 @@
      <Folder Include="Assets\GUI PRO Kit - Simple Casual\Prefabs\Prefabs_DemoScene_Panels" />
      <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml" />
      <Folder Include="Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity" />
+     <Folder Include="Assets\Simple Scroll-Snap\Examples\Example 6 (3D Shape Selection)\Scripts" />
+     <Folder Include="Assets\Simple Scroll-Snap\Examples\Example 6 (3D Shape Selection)\Materials" />
      <Folder Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Fonts" />
      <Folder Include="Assets\Extensions\CloudOnce\Data" />
      <Folder Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Resources" />
@@ -420,6 +440,7 @@
      <Folder Include="Assets\Extensions\CloudOnce\Providers\TestProvider" />
      <Folder Include="Assets\GooglePlayPlugins\com.google.play.core\Proguard" />
      <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Demo\Demo_Background" />
+     <Folder Include="Assets\Simple Scroll-Snap\Scripts\Plugins\CopyrightEditor" />
      <Folder Include="Assets\IronSource\Plugins\Android" />
      <Folder Include="Assets\Firebase" />
      <Folder Include="Assets\GoogleMobileAds\Mediation\AdColony\Plugins\Android\GoogleMobileAdsAdColonyMediation" />
@@ -430,6 +451,7 @@
      <None Include="Assets\Extensions\CloudOnce\Internal\Data\Templates\AchievementsPropertyTemplate.cs.txt" />
      <None Include="Assets\Others\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
      <None Include="Assets\Others\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+     <Folder Include="Assets\Simple Scroll-Snap\Examples\Example 1 (macOS Finder)\Scenes" />
      <Folder Include="Assets\Graphics\Sprites\Cars" />
      <Folder Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Materials" />
      <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Demo\Demo_Image" />
@@ -438,6 +460,7 @@
      <None Include="Assets\Others\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
      <None Include="Assets\Others\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <Folder Include="Assets\Extensions\GooglePlayGames\BasicApi\Video" />
+     <Folder Include="Assets\Simple Scroll-Snap\Examples\Example 4 (Pinned Map)\Prefabs" />
      <None Include="Assets\StreamingAssets\google-services-desktop.json" />
      <None Include="Assets\Others\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
      <Folder Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Scripts" />
@@ -449,12 +472,17 @@
      <Folder Include="Assets\GooglePlayPlugins\com.google.play.core" />
      <None Include="Assets\Others\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
      <Folder Include="Assets\Others\TextMesh Pro\Shaders" />
+     <Folder Include="Assets\Simple Scroll-Snap\Documentation" />
      <Folder Include="Assets\GoogleMobileAds\Mediation\AdColony\Plugins" />
      <Folder Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Resources\Sprite Assets" />
      <Folder Include="Assets\GUI PRO Kit - Simple Casual" />
+     <Folder Include="Assets\Simple Scroll-Snap\Examples\Example 4 (Pinned Map)" />
      <Folder Include="Assets\GUI PRO Kit - Simple Casual\Fonts" />
      <Folder Include="Assets\Others\TextMesh Pro\Resources\Style Sheets" />
      <Folder Include="Assets\Others\TextMesh Pro\Fonts" />
+     <Folder Include="Assets\Simple Scroll-Snap\Examples\Example 3 (Slot Machine)" />
+     <Folder Include="Assets\Simple Scroll-Snap\Examples\Example 1 (macOS Finder)\Sprites\Songs" />
+     <Folder Include="Assets\Simple Scroll-Snap\Examples\Example 6 (3D Shape Selection)\Scenes" />
      <Folder Include="Assets\Extensions\CloudOnce\Data\CloudPrefs" />
      <None Include="Assets\Resources\BillingMode.json" />
      <Folder Include="Assets\GooglePlayPlugins\com.google.play.review\Proguard" />
@@ -466,13 +494,16 @@
      <Folder Include="Assets\IronSource\Scripts" />
      <Folder Include="Assets\Resources" />
      <Folder Include="Assets\GUI PRO Kit - Simple Casual\Prefabs\Prefabs_Component_Sliders" />
+     <Folder Include="Assets\Simple Scroll-Snap\Examples\_Common\Prefabs" />
      <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Component\Icon_ItemIcons_(x2)" />
+     <Folder Include="Assets\Simple Scroll-Snap\Examples\_Common\Animator Controllers" />
      <Folder Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Prefabs" />
      <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Component\Button\Button_Demo_Light" />
      <Folder Include="Assets\Extensions\GooglePlayGames\BasicApi\SavedGame" />
      <Folder Include="Assets\GUI PRO Kit - Simple Casual\Prefabs\Prefabs_Component_Popups" />
      <Folder Include="Assets\GUI PRO Kit - Simple Casual\Preview" />
      <None Include="Assets\Extensions\CloudOnce\link.xml" />
+     <Folder Include="Assets\Simple Scroll-Snap\Examples\_Common\Animations" />
      <None Include="Assets\Extensions\CloudOnce\Internal\Data\Templates\CloudVariablesTemplate.cs.txt" />
      <Folder Include="Assets\GUI PRO Kit - Simple Casual\Prefabs\Prefabs_DemoScene_Panels\Light" />
      <None Include="Assets\GooglePlayPlugins\com.google.play.core\package.json" />
@@ -486,8 +517,11 @@
      <None Include="Assets\Extensions\CloudOnce\Internal\Data\Templates\CloudIDsTemplate.cs.txt" />
      <None Include="Assets\GooglePlayPlugins\com.google.play.core\Proguard\common.txt" />
      <Folder Include="Assets\Graphics\Sprites\Roads\Prefabs" />
+     <Folder Include="Assets\Simple Scroll-Snap\Examples\Example 3 (Slot Machine)\Scenes" />
      <Folder Include="Assets\Graphics\Sprites\Roads" />
+     <Folder Include="Assets\Simple Scroll-Snap\Examples\Example 2 (iOS Home Screen)\Scenes" />
      <Folder Include="Assets\GooglePlayPlugins\com.google.play.common" />
+     <Folder Include="Assets\Simple Scroll-Snap\Scripts" />
      <None Include="Assets\Others\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets\Extensions\CloudOnce\Internal\Data\Templates\AchievementsTemplate.cs.txt" />
      <Folder Include="Assets\Extensions\GooglePlayGames\OurUtils" />
@@ -504,20 +538,27 @@
      <Folder Include="Assets\Graphics\Sprites\Tiles" />
      <Folder Include="Assets\GoogleMobileAds\Mediation\AdColony\Platforms\Android\AdColony" />
      <Folder Include="Assets\Graphics\Sprites\Cars\Black" />
+     <Folder Include="Assets\Simple Scroll-Snap\Examples\Example 1 (macOS Finder)" />
      <Folder Include="Assets\Extensions\GooglePlayGames\Platforms\Native\Platforms" />
      <Folder Include="Assets\GUI PRO Kit - Simple Casual\Prefabs\Prefabs_Component_Buttons" />
+     <Folder Include="Assets\Simple Scroll-Snap\Examples\Example 5 (Dynamic Content)" />
      <Folder Include="Assets\Extensions\GooglePlayGames\ISocialPlatform" />
+     <Folder Include="Assets\Simple Scroll-Snap\Examples\Example 3 (Slot Machine)\Prefabs" />
      <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Component\Popup" />
      <None Include="Assets\Extensions\CloudOnce\CloudOnceSettings.txt" />
      <Folder Include="Assets\IronSource\Plugins" />
+     <Folder Include="Assets\Simple Scroll-Snap\Examples\Example 1 (macOS Finder)\Prefabs" />
      <None Include="Assets\Others\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+     <Folder Include="Assets\Simple Scroll-Snap\Examples\Example 4 (Pinned Map)\Sprites" />
      <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\maven-metadata.xml" />
      <Folder Include="Assets\GoogleMobileAds\Mediation\AdColony\Platforms\Mediation" />
      <None Include="Assets\Others\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
      <Folder Include="Assets\GUI PRO Kit - Simple Casual\Scene" />
      <Folder Include="Assets\Extensions\CloudOnce\Providers\GooglePlayGames" />
      <Folder Include="Assets\Extensions\CloudOnce\Internal\Data\JSONObject" />
+     <Folder Include="Assets\Simple Scroll-Snap" />
      <Folder Include="Assets\GooglePlayPlugins\com.google.android.appbundle" />
+     <Folder Include="Assets\Simple Scroll-Snap\Scripts\Plugins" />
      <None Include="Assets\Others\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
      <Folder Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Textures" />
      <Folder Include="Assets\Graphics\Sprites\Cars\Blue" />
@@ -528,6 +569,8 @@
      <Folder Include="Assets\Others\TextMesh Pro\Examples &amp; Extras" />
      <None Include="Assets\Others\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
      <None Include="Assets\GooglePlayPlugins\com.google.android.appbundle\package.json" />
+     <Folder Include="Assets\Simple Scroll-Snap\Examples\Example 2 (iOS Home Screen)" />
+     <Folder Include="Assets\Simple Scroll-Snap\Examples\Example 6 (3D Shape Selection)" />
      <Folder Include="Assets\Graphics\Sprites\Buildings" />
      <None Include="Assets\GoogleMobileAds\Mediation\AdColony\Plugins\Android\GoogleMobileAdsAdColonyMediation\AndroidManifest.xml" />
      <None Include="Assets\GooglePlayPlugins\com.google.play.review\package.json" />
@@ -539,6 +582,7 @@
      <Folder Include="Assets\Others\TextMesh Pro\Examples &amp; Extras\Resources\Color Gradient Presets" />
      <Folder Include="Assets\Others" />
      <None Include="Assets\Others\TextMesh Pro\Sprites\EmojiOne.json" />
+     <Folder Include="Assets\Simple Scroll-Snap\Examples\Example 3 (Slot Machine)\Scripts" />
      <Folder Include="Assets\GoogleMobileAds\Mediation\AdColony\Platforms" />
      <Folder Include="Assets\GUI PRO Kit - Simple Casual\Sprite\Component\Popup\Popup_Demo_Light" />
      <Folder Include="Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity" />
@@ -1449,6 +1493,34 @@
     <ProjectReference Include="GoogleMobileAds.Editor.csproj">
       <Project>{80eea640-013b-b83a-4d6d-a8b2678f4add}</Project>
       <Name>GoogleMobileAds.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="SimpleInspectorAttributes.csproj">
+      <Project>{eb47772d-d869-c595-97ee-ac06a0136f94}</Project>
+      <Name>SimpleInspectorAttributes</Name>
+    </ProjectReference>
+    <ProjectReference Include="SimpleScrollSnapEditor.csproj">
+      <Project>{cd4f667e-cc2e-ee96-239c-fb49b2f712ee}</Project>
+      <Name>SimpleScrollSnapEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Utilities.csproj">
+      <Project>{25c2e57c-930c-2c99-e2e7-abc523bf7dda}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="UtilitiesEditor.csproj">
+      <Project>{88a68530-a47d-5556-d1d9-4eef950cfc81}</Project>
+      <Name>UtilitiesEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="CopyrightNoticeEditor.csproj">
+      <Project>{d8031790-b27d-b75b-b62b-ae1ccdd33b1d}</Project>
+      <Name>CopyrightNoticeEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="SimpleInspectorAttributesEditor.csproj">
+      <Project>{3a647f34-723c-0581-2dd0-273fb4997c94}</Project>
+      <Name>SimpleInspectorAttributesEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="SimpleScrollSnap.csproj">
+      <Project>{9c108da7-7eda-1f96-1180-128a69006491}</Project>
+      <Name>SimpleScrollSnap</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
